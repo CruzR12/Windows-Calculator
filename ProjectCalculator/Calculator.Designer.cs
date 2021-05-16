@@ -38,14 +38,15 @@
             this.number_7 = new System.Windows.Forms.Button();
             this.number_8 = new System.Windows.Forms.Button();
             this.number_9 = new System.Windows.Forms.Button();
+            this.decimal_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
             // 
             this.number_0.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number_0.Location = new System.Drawing.Point(12, 277);
+            this.number_0.Location = new System.Drawing.Point(12, 274);
             this.number_0.Name = "number_0";
-            this.number_0.Size = new System.Drawing.Size(108, 46);
+            this.number_0.Size = new System.Drawing.Size(108, 49);
             this.number_0.TabIndex = 0;
             this.number_0.Text = "0";
             this.number_0.UseVisualStyleBackColor = true;
@@ -54,7 +55,7 @@
             // number_1
             // 
             this.number_1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_1.Location = new System.Drawing.Point(12, 222);
+            this.number_1.Location = new System.Drawing.Point(12, 219);
             this.number_1.Name = "number_1";
             this.number_1.Size = new System.Drawing.Size(51, 49);
             this.number_1.TabIndex = 3;
@@ -65,7 +66,7 @@
             // number_2
             // 
             this.number_2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_2.Location = new System.Drawing.Point(69, 222);
+            this.number_2.Location = new System.Drawing.Point(69, 219);
             this.number_2.Name = "number_2";
             this.number_2.Size = new System.Drawing.Size(51, 49);
             this.number_2.TabIndex = 4;
@@ -76,7 +77,7 @@
             // number_3
             // 
             this.number_3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_3.Location = new System.Drawing.Point(126, 222);
+            this.number_3.Location = new System.Drawing.Point(126, 219);
             this.number_3.Name = "number_3";
             this.number_3.Size = new System.Drawing.Size(51, 49);
             this.number_3.TabIndex = 5;
@@ -87,7 +88,7 @@
             // number_4
             // 
             this.number_4.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_4.Location = new System.Drawing.Point(12, 167);
+            this.number_4.Location = new System.Drawing.Point(12, 164);
             this.number_4.Name = "number_4";
             this.number_4.Size = new System.Drawing.Size(51, 49);
             this.number_4.TabIndex = 6;
@@ -98,7 +99,7 @@
             // number_5
             // 
             this.number_5.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_5.Location = new System.Drawing.Point(69, 167);
+            this.number_5.Location = new System.Drawing.Point(69, 164);
             this.number_5.Name = "number_5";
             this.number_5.Size = new System.Drawing.Size(51, 49);
             this.number_5.TabIndex = 7;
@@ -109,7 +110,7 @@
             // number_6
             // 
             this.number_6.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_6.Location = new System.Drawing.Point(126, 167);
+            this.number_6.Location = new System.Drawing.Point(126, 164);
             this.number_6.Name = "number_6";
             this.number_6.Size = new System.Drawing.Size(51, 49);
             this.number_6.TabIndex = 8;
@@ -120,7 +121,7 @@
             // number_7
             // 
             this.number_7.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_7.Location = new System.Drawing.Point(12, 112);
+            this.number_7.Location = new System.Drawing.Point(12, 109);
             this.number_7.Name = "number_7";
             this.number_7.Size = new System.Drawing.Size(51, 49);
             this.number_7.TabIndex = 9;
@@ -131,7 +132,7 @@
             // number_8
             // 
             this.number_8.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_8.Location = new System.Drawing.Point(69, 112);
+            this.number_8.Location = new System.Drawing.Point(69, 109);
             this.number_8.Name = "number_8";
             this.number_8.Size = new System.Drawing.Size(51, 49);
             this.number_8.TabIndex = 10;
@@ -142,7 +143,7 @@
             // number_9
             // 
             this.number_9.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.number_9.Location = new System.Drawing.Point(126, 112);
+            this.number_9.Location = new System.Drawing.Point(126, 109);
             this.number_9.Name = "number_9";
             this.number_9.Size = new System.Drawing.Size(51, 49);
             this.number_9.TabIndex = 11;
@@ -150,11 +151,23 @@
             this.number_9.UseVisualStyleBackColor = true;
             this.number_9.Click += new System.EventHandler(this.number_9_Click);
             // 
+            // decimal_button
+            // 
+            this.decimal_button.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.decimal_button.Location = new System.Drawing.Point(126, 274);
+            this.decimal_button.Name = "decimal_button";
+            this.decimal_button.Size = new System.Drawing.Size(51, 49);
+            this.decimal_button.TabIndex = 12;
+            this.decimal_button.Text = ".";
+            this.decimal_button.UseVisualStyleBackColor = true;
+            this.decimal_button.Click += new System.EventHandler(this.decimal_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 335);
+            this.Controls.Add(this.decimal_button);
             this.Controls.Add(this.number_9);
             this.Controls.Add(this.number_8);
             this.Controls.Add(this.number_7);
@@ -183,6 +196,7 @@
         private System.Windows.Forms.Button number_7;
         private System.Windows.Forms.Button number_8;
         private System.Windows.Forms.Button number_9;
+        private System.Windows.Forms.Button decimal_button;
     }
 }
 

@@ -66,5 +66,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void decimal_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

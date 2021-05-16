@@ -51,5 +51,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void number_7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

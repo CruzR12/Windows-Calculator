@@ -44,6 +44,7 @@
             this.subtraction_button = new System.Windows.Forms.Button();
             this.addition_button = new System.Windows.Forms.Button();
             this.result_button = new System.Windows.Forms.Button();
+            this.delete_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -222,11 +223,23 @@
             this.result_button.UseVisualStyleBackColor = true;
             this.result_button.Click += new System.EventHandler(this.result_button_Click);
             // 
+            // delete_button
+            // 
+            this.delete_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.delete_button.Location = new System.Drawing.Point(240, 164);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(51, 49);
+            this.delete_button.TabIndex = 18;
+            this.delete_button.Text = "C";
+            this.delete_button.UseVisualStyleBackColor = true;
+            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 335);
+            this.Controls.Add(this.delete_button);
             this.Controls.Add(this.result_button);
             this.Controls.Add(this.addition_button);
             this.Controls.Add(this.subtraction_button);
@@ -267,6 +280,7 @@
         private System.Windows.Forms.Button subtraction_button;
         private System.Windows.Forms.Button addition_button;
         private System.Windows.Forms.Button result_button;
+        private System.Windows.Forms.Button delete_button;
     }
 }
 

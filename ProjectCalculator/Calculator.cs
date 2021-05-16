@@ -96,5 +96,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void delete_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -86,5 +86,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void addition_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

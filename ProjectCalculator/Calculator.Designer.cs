@@ -30,6 +30,7 @@
         {
             this.number_0 = new System.Windows.Forms.Button();
             this.number_1 = new System.Windows.Forms.Button();
+            this.number_2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -37,7 +38,7 @@
             this.number_0.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.number_0.Location = new System.Drawing.Point(12, 277);
             this.number_0.Name = "number_0";
-            this.number_0.Size = new System.Drawing.Size(89, 46);
+            this.number_0.Size = new System.Drawing.Size(108, 46);
             this.number_0.TabIndex = 0;
             this.number_0.Text = "0";
             this.number_0.UseVisualStyleBackColor = true;
@@ -54,11 +55,23 @@
             this.number_1.UseVisualStyleBackColor = true;
             this.number_1.Click += new System.EventHandler(this.number_1_Click);
             // 
+            // number_2
+            // 
+            this.number_2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.number_2.Location = new System.Drawing.Point(69, 222);
+            this.number_2.Name = "number_2";
+            this.number_2.Size = new System.Drawing.Size(51, 49);
+            this.number_2.TabIndex = 4;
+            this.number_2.Text = "2";
+            this.number_2.UseVisualStyleBackColor = true;
+            this.number_2.Click += new System.EventHandler(this.number_2_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 335);
+            this.Controls.Add(this.number_2);
             this.Controls.Add(this.number_1);
             this.Controls.Add(this.number_0);
             this.Name = "Calculator";
@@ -71,6 +84,7 @@
 
         private System.Windows.Forms.Button number_0;
         private System.Windows.Forms.Button number_1;
+        private System.Windows.Forms.Button number_2;
     }
 }
 

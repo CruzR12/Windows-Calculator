@@ -76,5 +76,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void multiplication_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

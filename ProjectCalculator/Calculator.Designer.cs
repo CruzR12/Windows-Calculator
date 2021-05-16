@@ -40,6 +40,7 @@
             this.number_9 = new System.Windows.Forms.Button();
             this.decimal_button = new System.Windows.Forms.Button();
             this.division_button = new System.Windows.Forms.Button();
+            this.multiplication_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -174,11 +175,23 @@
             this.division_button.UseVisualStyleBackColor = true;
             this.division_button.Click += new System.EventHandler(this.division_button_Click);
             // 
+            // multiplication_button
+            // 
+            this.multiplication_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.multiplication_button.Location = new System.Drawing.Point(183, 164);
+            this.multiplication_button.Name = "multiplication_button";
+            this.multiplication_button.Size = new System.Drawing.Size(51, 49);
+            this.multiplication_button.TabIndex = 14;
+            this.multiplication_button.Text = "*";
+            this.multiplication_button.UseVisualStyleBackColor = true;
+            this.multiplication_button.Click += new System.EventHandler(this.multiplication_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 335);
+            this.Controls.Add(this.multiplication_button);
             this.Controls.Add(this.division_button);
             this.Controls.Add(this.decimal_button);
             this.Controls.Add(this.number_9);
@@ -211,6 +224,7 @@
         private System.Windows.Forms.Button number_9;
         private System.Windows.Forms.Button decimal_button;
         private System.Windows.Forms.Button division_button;
+        private System.Windows.Forms.Button multiplication_button;
     }
 }
 

@@ -41,6 +41,7 @@
             this.decimal_button = new System.Windows.Forms.Button();
             this.division_button = new System.Windows.Forms.Button();
             this.multiplication_button = new System.Windows.Forms.Button();
+            this.subtraction_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -186,11 +187,23 @@
             this.multiplication_button.UseVisualStyleBackColor = true;
             this.multiplication_button.Click += new System.EventHandler(this.multiplication_button_Click);
             // 
+            // subtraction_button
+            // 
+            this.subtraction_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.subtraction_button.Location = new System.Drawing.Point(183, 219);
+            this.subtraction_button.Name = "subtraction_button";
+            this.subtraction_button.Size = new System.Drawing.Size(51, 49);
+            this.subtraction_button.TabIndex = 15;
+            this.subtraction_button.Text = "-";
+            this.subtraction_button.UseVisualStyleBackColor = true;
+            this.subtraction_button.Click += new System.EventHandler(this.subtraction_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 335);
+            this.Controls.Add(this.subtraction_button);
             this.Controls.Add(this.multiplication_button);
             this.Controls.Add(this.division_button);
             this.Controls.Add(this.decimal_button);
@@ -225,6 +238,7 @@
         private System.Windows.Forms.Button decimal_button;
         private System.Windows.Forms.Button division_button;
         private System.Windows.Forms.Button multiplication_button;
+        private System.Windows.Forms.Button subtraction_button;
     }
 }
 

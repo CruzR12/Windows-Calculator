@@ -81,5 +81,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void subtraction_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

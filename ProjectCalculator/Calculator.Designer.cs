@@ -39,6 +39,7 @@
             this.number_8 = new System.Windows.Forms.Button();
             this.number_9 = new System.Windows.Forms.Button();
             this.decimal_button = new System.Windows.Forms.Button();
+            this.division_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -162,11 +163,23 @@
             this.decimal_button.UseVisualStyleBackColor = true;
             this.decimal_button.Click += new System.EventHandler(this.decimal_button_Click);
             // 
+            // division_button
+            // 
+            this.division_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.division_button.Location = new System.Drawing.Point(183, 109);
+            this.division_button.Name = "division_button";
+            this.division_button.Size = new System.Drawing.Size(51, 49);
+            this.division_button.TabIndex = 13;
+            this.division_button.Text = "/";
+            this.division_button.UseVisualStyleBackColor = true;
+            this.division_button.Click += new System.EventHandler(this.division_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 335);
+            this.Controls.Add(this.division_button);
             this.Controls.Add(this.decimal_button);
             this.Controls.Add(this.number_9);
             this.Controls.Add(this.number_8);
@@ -197,6 +210,7 @@
         private System.Windows.Forms.Button number_8;
         private System.Windows.Forms.Button number_9;
         private System.Windows.Forms.Button decimal_button;
+        private System.Windows.Forms.Button division_button;
     }
 }
 

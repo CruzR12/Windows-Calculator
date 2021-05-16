@@ -71,5 +71,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void division_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

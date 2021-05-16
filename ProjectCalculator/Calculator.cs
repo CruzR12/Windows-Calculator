@@ -92,7 +92,7 @@ namespace ProjectCalculator
 
         }
 
-        private void result_button_Click(object sender, EventArgs e)
+        private void equals_button_Click(object sender, EventArgs e)
         {
 
         }
@@ -103,6 +103,16 @@ namespace ProjectCalculator
         }
 
         private void clear_all_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calculator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void result_box_TextChanged(object sender, EventArgs e)
         {
 
         }

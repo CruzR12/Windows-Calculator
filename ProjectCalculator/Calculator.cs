@@ -101,5 +101,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void clear_all_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

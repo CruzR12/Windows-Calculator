@@ -45,6 +45,7 @@
             this.addition_button = new System.Windows.Forms.Button();
             this.result_button = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
+            this.clear_all_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -234,11 +235,23 @@
             this.delete_button.UseVisualStyleBackColor = true;
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
+            // clear_all_button
+            // 
+            this.clear_all_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.clear_all_button.Location = new System.Drawing.Point(240, 109);
+            this.clear_all_button.Name = "clear_all_button";
+            this.clear_all_button.Size = new System.Drawing.Size(51, 49);
+            this.clear_all_button.TabIndex = 19;
+            this.clear_all_button.Text = "CE";
+            this.clear_all_button.UseVisualStyleBackColor = true;
+            this.clear_all_button.Click += new System.EventHandler(this.clear_all_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 335);
+            this.Controls.Add(this.clear_all_button);
             this.Controls.Add(this.delete_button);
             this.Controls.Add(this.result_button);
             this.Controls.Add(this.addition_button);
@@ -281,6 +294,7 @@
         private System.Windows.Forms.Button addition_button;
         private System.Windows.Forms.Button result_button;
         private System.Windows.Forms.Button delete_button;
+        private System.Windows.Forms.Button clear_all_button;
     }
 }
 

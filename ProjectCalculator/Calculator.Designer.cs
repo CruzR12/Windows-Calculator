@@ -31,6 +31,7 @@
             this.number_0 = new System.Windows.Forms.Button();
             this.number_1 = new System.Windows.Forms.Button();
             this.number_2 = new System.Windows.Forms.Button();
+            this.number_3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -66,11 +67,23 @@
             this.number_2.UseVisualStyleBackColor = true;
             this.number_2.Click += new System.EventHandler(this.number_2_Click);
             // 
+            // number_3
+            // 
+            this.number_3.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.number_3.Location = new System.Drawing.Point(126, 222);
+            this.number_3.Name = "number_3";
+            this.number_3.Size = new System.Drawing.Size(51, 49);
+            this.number_3.TabIndex = 5;
+            this.number_3.Text = "3";
+            this.number_3.UseVisualStyleBackColor = true;
+            this.number_3.Click += new System.EventHandler(this.number_3_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 335);
+            this.Controls.Add(this.number_3);
             this.Controls.Add(this.number_2);
             this.Controls.Add(this.number_1);
             this.Controls.Add(this.number_0);
@@ -85,6 +98,7 @@
         private System.Windows.Forms.Button number_0;
         private System.Windows.Forms.Button number_1;
         private System.Windows.Forms.Button number_2;
+        private System.Windows.Forms.Button number_3;
     }
 }
 

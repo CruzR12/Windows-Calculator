@@ -91,5 +91,10 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void result_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

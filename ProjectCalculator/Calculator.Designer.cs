@@ -43,6 +43,7 @@
             this.multiplication_button = new System.Windows.Forms.Button();
             this.subtraction_button = new System.Windows.Forms.Button();
             this.addition_button = new System.Windows.Forms.Button();
+            this.result_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -210,11 +211,23 @@
             this.addition_button.UseVisualStyleBackColor = true;
             this.addition_button.Click += new System.EventHandler(this.addition_button_Click);
             // 
+            // result_button
+            // 
+            this.result_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.result_button.Location = new System.Drawing.Point(240, 219);
+            this.result_button.Name = "result_button";
+            this.result_button.Size = new System.Drawing.Size(51, 104);
+            this.result_button.TabIndex = 17;
+            this.result_button.Text = "=";
+            this.result_button.UseVisualStyleBackColor = true;
+            this.result_button.Click += new System.EventHandler(this.result_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 335);
+            this.ClientSize = new System.Drawing.Size(303, 335);
+            this.Controls.Add(this.result_button);
             this.Controls.Add(this.addition_button);
             this.Controls.Add(this.subtraction_button);
             this.Controls.Add(this.multiplication_button);
@@ -253,6 +266,7 @@
         private System.Windows.Forms.Button multiplication_button;
         private System.Windows.Forms.Button subtraction_button;
         private System.Windows.Forms.Button addition_button;
+        private System.Windows.Forms.Button result_button;
     }
 }
 

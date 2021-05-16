@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.number_0 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // number_0
+            // 
+            this.number_0.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.number_0.Location = new System.Drawing.Point(12, 277);
+            this.number_0.Name = "number_0";
+            this.number_0.Size = new System.Drawing.Size(89, 46);
+            this.number_0.TabIndex = 0;
+            this.number_0.Text = "0";
+            this.number_0.UseVisualStyleBackColor = true;
+            this.number_0.Click += new System.EventHandler(this.number_0_Click);
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 335);
+            this.Controls.Add(this.number_0);
             this.Name = "Calculator";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +55,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button number_0;
     }
 }
 

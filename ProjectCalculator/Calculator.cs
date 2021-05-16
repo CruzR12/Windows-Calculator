@@ -21,5 +21,11 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void number_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -36,5 +36,15 @@ namespace ProjectCalculator
         {
 
         }
+
+        private void number_4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void number_5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

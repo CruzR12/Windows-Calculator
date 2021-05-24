@@ -69,7 +69,7 @@ namespace ProjectCalculator
 
         private void decimal_button_Click(object sender, EventArgs e)
         {
-
+            result_box.Text += ".";
         }
 
         private void division_button_Click(object sender, EventArgs e)

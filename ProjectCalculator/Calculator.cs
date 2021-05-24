@@ -64,7 +64,7 @@ namespace ProjectCalculator
 
         private void number_9_Click(object sender, EventArgs e)
         {
-
+            result_box.Text += 9;
         }
 
         private void decimal_button_Click(object sender, EventArgs e)

@@ -19,12 +19,12 @@ namespace ProjectCalculator
 
         private void number_0_Click(object sender, EventArgs e)
         {
-
+            result_box.Text += 0;
         }
 
         private void number_1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void number_2_Click(object sender, EventArgs e)

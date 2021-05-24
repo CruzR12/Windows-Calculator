@@ -54,7 +54,7 @@ namespace ProjectCalculator
 
         private void number_7_Click(object sender, EventArgs e)
         {
-
+            result_box.Text += 7;
         }
 
         private void number_8_Click(object sender, EventArgs e)

@@ -29,7 +29,7 @@ namespace ProjectCalculator
 
         private void number_2_Click(object sender, EventArgs e)
         {
-
+            result_box.Text += 2;
         }
 
         private void number_3_Click(object sender, EventArgs e)

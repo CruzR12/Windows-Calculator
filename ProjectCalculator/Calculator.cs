@@ -99,12 +99,12 @@ namespace ProjectCalculator
 
         private void delete_button_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void clear_all_button_Click(object sender, EventArgs e)
         {
-
+            result_box.Text = " ";
         }
 
         private void Calculator_Load(object sender, EventArgs e)

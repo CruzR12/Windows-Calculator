@@ -7,3 +7,12 @@ C:\Users\cruzr\Documents\Visual Studio 2015\Projects\ProjectCalculator\ProjectCa
 C:\Users\cruzr\Documents\Visual Studio 2015\Projects\ProjectCalculator\ProjectCalculator\obj\Debug\ProjectCalculator.csproj.GenerateResource.Cache
 C:\Users\cruzr\Documents\Visual Studio 2015\Projects\ProjectCalculator\ProjectCalculator\obj\Debug\ProjectCalculator.exe
 C:\Users\cruzr\Documents\Visual Studio 2015\Projects\ProjectCalculator\ProjectCalculator\obj\Debug\ProjectCalculator.pdb
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\bin\Debug\ProjectCalculator.exe.config
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.exe
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.pdb
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\bin\Debug\ProjectCalculator.exe
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\bin\Debug\ProjectCalculator.pdb
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.csprojResolveAssemblyReference.cache
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.Calculator.resources
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.Properties.Resources.resources
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.csproj.GenerateResource.Cache

@@ -23,61 +23,6 @@ namespace ProjectCalculator
             result_box.Text = result_box.Text + b.Text;
         }
 
-        private void number_0_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 0;
-        }
-
-        private void number_1_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 1;
-        }
-
-        private void number_2_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 2;
-        }
-
-        private void number_3_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 3;
-        }
-
-        private void number_4_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 4;
-        }
-
-        private void number_5_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 5;
-        }
-
-        private void number_6_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 6;
-        }
-
-        private void number_7_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 7;
-        }
-
-        private void number_8_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 8;
-        }
-
-        private void number_9_Click(object sender, EventArgs e)
-        {
-            result_box.Text += 9;
-        }
-
-        private void decimal_button_Click(object sender, EventArgs e)
-        {
-            result_box.Text += ".";
-        }
-
         private void division_button_Click(object sender, EventArgs e)
         {
 
@@ -110,7 +55,7 @@ namespace ProjectCalculator
 
         private void clear_all_button_Click(object sender, EventArgs e)
         {
-            result_box.Text = " ";
+            result_box.Text = "0";
         }
 
         private void Calculator_Load(object sender, EventArgs e)

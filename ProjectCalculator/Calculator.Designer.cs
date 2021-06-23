@@ -179,7 +179,7 @@
             this.division_button.TabIndex = 13;
             this.division_button.Text = "/";
             this.division_button.UseVisualStyleBackColor = true;
-            this.division_button.Click += new System.EventHandler(this.division_button_Click);
+            this.division_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // multiplication_button
             // 
@@ -190,7 +190,7 @@
             this.multiplication_button.TabIndex = 14;
             this.multiplication_button.Text = "*";
             this.multiplication_button.UseVisualStyleBackColor = true;
-            this.multiplication_button.Click += new System.EventHandler(this.multiplication_button_Click);
+            this.multiplication_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // subtraction_button
             // 
@@ -201,7 +201,7 @@
             this.subtraction_button.TabIndex = 15;
             this.subtraction_button.Text = "-";
             this.subtraction_button.UseVisualStyleBackColor = true;
-            this.subtraction_button.Click += new System.EventHandler(this.subtraction_button_Click);
+            this.subtraction_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // addition_button
             // 
@@ -212,7 +212,7 @@
             this.addition_button.TabIndex = 16;
             this.addition_button.Text = "+";
             this.addition_button.UseVisualStyleBackColor = true;
-            this.addition_button.Click += new System.EventHandler(this.addition_button_Click);
+            this.addition_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // equals_button
             // 

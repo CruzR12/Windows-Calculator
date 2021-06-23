@@ -37,6 +37,7 @@ namespace ProjectCalculator
             Button b = (Button)sender;
             operation = b.Text;
             value = Double.Parse(result_box.Text);
+
         }
 
         private void division_button_Click(object sender, EventArgs e)
@@ -79,9 +80,5 @@ namespace ProjectCalculator
 
         }
 
-        private void numbutton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

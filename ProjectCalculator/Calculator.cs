@@ -19,14 +19,15 @@ namespace ProjectCalculator
 
         Double value = 0;
         String operation = "";
+        bool operation_clicked = false;
 
         private void numbutton_Click(object sender, EventArgs e)
         {
-            if (result_box.Text == "0")
+            if ((result_box.Text == "0")||(operation_clicked))
             {
                 result_box.Text = "";
             }
-
+            operation_clicked = false;
             Button b = (Button)sender;
             result_box.Text = result_box.Text + b.Text;
 
@@ -37,27 +38,7 @@ namespace ProjectCalculator
             Button b = (Button)sender;
             operation = b.Text;
             value = Double.Parse(result_box.Text);
-
-        }
-
-        private void division_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void multiplication_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtraction_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addition_button_Click(object sender, EventArgs e)
-        {
-
+            operation_clicked = true;
         }
 
         private void equals_button_Click(object sender, EventArgs e)

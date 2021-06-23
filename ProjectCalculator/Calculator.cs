@@ -43,6 +43,26 @@ namespace ProjectCalculator
 
         private void equals_button_Click(object sender, EventArgs e)
         {
+            if (operation == "+")
+            {
+                result_box.Text = (value + Double.Parse(result_box.Text)).ToString();
+            }
+
+            if (operation == "-")
+            {
+                result_box.Text = (value - Double.Parse(result_box.Text)).ToString();
+            }
+
+            if (operation == "*")
+            {
+                result_box.Text = (value * Double.Parse(result_box.Text)).ToString();
+            }
+
+            if (operation == "/")
+            {
+                result_box.Text = (value / Double.Parse(result_box.Text)).ToString();
+            }
+            operation_clicked = false;
 
         }
 

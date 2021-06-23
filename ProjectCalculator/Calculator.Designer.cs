@@ -47,6 +47,7 @@
             this.delete_button = new System.Windows.Forms.Button();
             this.clear_all_button = new System.Windows.Forms.Button();
             this.result_box = new System.Windows.Forms.TextBox();
+            this.result_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // number_0
@@ -258,11 +259,23 @@
             this.result_box.Text = "0";
             this.result_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // result_label
+            // 
+            this.result_label.AutoSize = true;
+            this.result_label.BackColor = System.Drawing.SystemColors.Window;
+            this.result_label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.result_label.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.result_label.Location = new System.Drawing.Point(13, 25);
+            this.result_label.Name = "result_label";
+            this.result_label.Size = new System.Drawing.Size(0, 15);
+            this.result_label.TabIndex = 21;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 313);
+            this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
             this.Controls.Add(this.clear_all_button);
             this.Controls.Add(this.delete_button);
@@ -312,6 +325,7 @@
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.Button clear_all_button;
         private System.Windows.Forms.TextBox result_box;
+        private System.Windows.Forms.Label result_label;
     }
 }
 

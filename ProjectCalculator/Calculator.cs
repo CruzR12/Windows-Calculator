@@ -19,8 +19,14 @@ namespace ProjectCalculator
 
         private void button_Click(object sender, EventArgs e)
         {
+            if (result_box.Text == "0")
+            {
+                result_box.Text = "";
+            }
+
             Button b = (Button)sender;
             result_box.Text = result_box.Text + b.Text;
+
         }
 
         private void division_button_Click(object sender, EventArgs e)
@@ -63,9 +69,5 @@ namespace ProjectCalculator
 
         }
 
-        private void result_box_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

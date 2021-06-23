@@ -255,8 +255,8 @@
             this.result_box.Name = "result_box";
             this.result_box.Size = new System.Drawing.Size(279, 47);
             this.result_box.TabIndex = 20;
+            this.result_box.Text = "0";
             this.result_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.result_box.TextChanged += new System.EventHandler(this.result_box_TextChanged);
             // 
             // Calculator
             // 

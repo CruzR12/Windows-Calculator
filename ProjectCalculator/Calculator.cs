@@ -17,7 +17,10 @@ namespace ProjectCalculator
             InitializeComponent();
         }
 
-        private void button_Click(object sender, EventArgs e)
+        Double value = 0;
+        String operation = "";
+
+        private void numbutton_Click(object sender, EventArgs e)
         {
             if (result_box.Text == "0")
             {
@@ -26,6 +29,11 @@ namespace ProjectCalculator
 
             Button b = (Button)sender;
             result_box.Text = result_box.Text + b.Text;
+
+        }
+        
+        private void operator_button_Click(object sender, EventArgs e)
+        {
 
         }
 

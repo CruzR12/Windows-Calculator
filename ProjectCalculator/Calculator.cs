@@ -79,5 +79,9 @@ namespace ProjectCalculator
 
         }
 
+        private void numbutton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

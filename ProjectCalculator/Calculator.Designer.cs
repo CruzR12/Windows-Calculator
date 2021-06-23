@@ -44,8 +44,8 @@
             this.subtraction_button = new System.Windows.Forms.Button();
             this.addition_button = new System.Windows.Forms.Button();
             this.equals_button = new System.Windows.Forms.Button();
-            this.delete_button = new System.Windows.Forms.Button();
-            this.clear_all_button = new System.Windows.Forms.Button();
+            this.clear_button = new System.Windows.Forms.Button();
+            this.clear_entry_button = new System.Windows.Forms.Button();
             this.result_box = new System.Windows.Forms.TextBox();
             this.result_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -226,27 +226,27 @@
             this.equals_button.UseVisualStyleBackColor = true;
             this.equals_button.Click += new System.EventHandler(this.equals_button_Click);
             // 
-            // delete_button
+            // clear_button
             // 
-            this.delete_button.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.delete_button.Location = new System.Drawing.Point(240, 143);
-            this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(51, 49);
-            this.delete_button.TabIndex = 18;
-            this.delete_button.Text = "C";
-            this.delete_button.UseVisualStyleBackColor = true;
-            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
+            this.clear_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.clear_button.Location = new System.Drawing.Point(240, 143);
+            this.clear_button.Name = "clear_button";
+            this.clear_button.Size = new System.Drawing.Size(51, 49);
+            this.clear_button.TabIndex = 18;
+            this.clear_button.Text = "C";
+            this.clear_button.UseVisualStyleBackColor = true;
+            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
             // 
-            // clear_all_button
+            // clear_entry_button
             // 
-            this.clear_all_button.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.clear_all_button.Location = new System.Drawing.Point(240, 88);
-            this.clear_all_button.Name = "clear_all_button";
-            this.clear_all_button.Size = new System.Drawing.Size(51, 49);
-            this.clear_all_button.TabIndex = 19;
-            this.clear_all_button.Text = "CE";
-            this.clear_all_button.UseVisualStyleBackColor = true;
-            this.clear_all_button.Click += new System.EventHandler(this.clear_all_button_Click);
+            this.clear_entry_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.clear_entry_button.Location = new System.Drawing.Point(240, 88);
+            this.clear_entry_button.Name = "clear_entry_button";
+            this.clear_entry_button.Size = new System.Drawing.Size(51, 49);
+            this.clear_entry_button.TabIndex = 19;
+            this.clear_entry_button.Text = "CE";
+            this.clear_entry_button.UseVisualStyleBackColor = true;
+            this.clear_entry_button.Click += new System.EventHandler(this.clear_entry_button_Click);
             // 
             // result_box
             // 
@@ -277,8 +277,8 @@
             this.ClientSize = new System.Drawing.Size(303, 313);
             this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
-            this.Controls.Add(this.clear_all_button);
-            this.Controls.Add(this.delete_button);
+            this.Controls.Add(this.clear_entry_button);
+            this.Controls.Add(this.clear_button);
             this.Controls.Add(this.equals_button);
             this.Controls.Add(this.addition_button);
             this.Controls.Add(this.subtraction_button);
@@ -298,7 +298,6 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.Name = "Calculator";
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.Calculator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,8 +321,8 @@
         private System.Windows.Forms.Button subtraction_button;
         private System.Windows.Forms.Button addition_button;
         private System.Windows.Forms.Button equals_button;
-        private System.Windows.Forms.Button delete_button;
-        private System.Windows.Forms.Button clear_all_button;
+        private System.Windows.Forms.Button clear_button;
+        private System.Windows.Forms.Button clear_entry_button;
         private System.Windows.Forms.TextBox result_box;
         private System.Windows.Forms.Label result_label;
     }

@@ -39,10 +39,12 @@ namespace ProjectCalculator
             operation = b.Text;
             value = Double.Parse(result_box.Text);
             operation_clicked = true;
+            result_label.Text = value + " " + operation;
         }
 
         private void equals_button_Click(object sender, EventArgs e)
         {
+            result_label.Text = "";
             if (operation == "+")
             {
                 result_box.Text = (value + Double.Parse(result_box.Text)).ToString();

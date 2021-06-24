@@ -142,6 +142,10 @@ namespace ProjectCalculator
                 case ".":
                     decimal_button.PerformClick();
                     break;
+
+                case "+":
+                    addition_button.PerformClick();
+                    break;
                 default:
                     break;
             }

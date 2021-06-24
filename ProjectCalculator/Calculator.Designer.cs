@@ -57,6 +57,7 @@
             this.number_0.Name = "number_0";
             this.number_0.Size = new System.Drawing.Size(108, 49);
             this.number_0.TabIndex = 0;
+            this.number_0.TabStop = false;
             this.number_0.Text = "0";
             this.number_0.UseVisualStyleBackColor = true;
             this.number_0.Click += new System.EventHandler(this.numbutton_Click);
@@ -68,6 +69,7 @@
             this.number_1.Name = "number_1";
             this.number_1.Size = new System.Drawing.Size(51, 49);
             this.number_1.TabIndex = 3;
+            this.number_1.TabStop = false;
             this.number_1.Text = "1";
             this.number_1.UseVisualStyleBackColor = true;
             this.number_1.Click += new System.EventHandler(this.numbutton_Click);
@@ -79,6 +81,7 @@
             this.number_2.Name = "number_2";
             this.number_2.Size = new System.Drawing.Size(51, 49);
             this.number_2.TabIndex = 4;
+            this.number_2.TabStop = false;
             this.number_2.Text = "2";
             this.number_2.UseVisualStyleBackColor = true;
             this.number_2.Click += new System.EventHandler(this.numbutton_Click);
@@ -90,6 +93,7 @@
             this.number_3.Name = "number_3";
             this.number_3.Size = new System.Drawing.Size(51, 49);
             this.number_3.TabIndex = 5;
+            this.number_3.TabStop = false;
             this.number_3.Text = "3";
             this.number_3.UseVisualStyleBackColor = true;
             this.number_3.Click += new System.EventHandler(this.numbutton_Click);
@@ -101,6 +105,7 @@
             this.number_4.Name = "number_4";
             this.number_4.Size = new System.Drawing.Size(51, 49);
             this.number_4.TabIndex = 6;
+            this.number_4.TabStop = false;
             this.number_4.Text = "4";
             this.number_4.UseVisualStyleBackColor = true;
             this.number_4.Click += new System.EventHandler(this.numbutton_Click);
@@ -112,6 +117,7 @@
             this.number_5.Name = "number_5";
             this.number_5.Size = new System.Drawing.Size(51, 49);
             this.number_5.TabIndex = 7;
+            this.number_5.TabStop = false;
             this.number_5.Text = "5";
             this.number_5.UseVisualStyleBackColor = true;
             this.number_5.Click += new System.EventHandler(this.numbutton_Click);
@@ -123,6 +129,7 @@
             this.number_6.Name = "number_6";
             this.number_6.Size = new System.Drawing.Size(51, 49);
             this.number_6.TabIndex = 8;
+            this.number_6.TabStop = false;
             this.number_6.Text = "6";
             this.number_6.UseVisualStyleBackColor = true;
             this.number_6.Click += new System.EventHandler(this.numbutton_Click);
@@ -134,6 +141,7 @@
             this.number_7.Name = "number_7";
             this.number_7.Size = new System.Drawing.Size(51, 49);
             this.number_7.TabIndex = 9;
+            this.number_7.TabStop = false;
             this.number_7.Text = "7";
             this.number_7.UseVisualStyleBackColor = true;
             this.number_7.Click += new System.EventHandler(this.numbutton_Click);
@@ -145,6 +153,7 @@
             this.number_8.Name = "number_8";
             this.number_8.Size = new System.Drawing.Size(51, 49);
             this.number_8.TabIndex = 10;
+            this.number_8.TabStop = false;
             this.number_8.Text = "8";
             this.number_8.UseVisualStyleBackColor = true;
             this.number_8.Click += new System.EventHandler(this.numbutton_Click);
@@ -156,6 +165,7 @@
             this.number_9.Name = "number_9";
             this.number_9.Size = new System.Drawing.Size(51, 49);
             this.number_9.TabIndex = 11;
+            this.number_9.TabStop = false;
             this.number_9.Text = "9";
             this.number_9.UseVisualStyleBackColor = true;
             this.number_9.Click += new System.EventHandler(this.numbutton_Click);
@@ -167,6 +177,7 @@
             this.decimal_button.Name = "decimal_button";
             this.decimal_button.Size = new System.Drawing.Size(51, 49);
             this.decimal_button.TabIndex = 12;
+            this.decimal_button.TabStop = false;
             this.decimal_button.Text = ".";
             this.decimal_button.UseVisualStyleBackColor = true;
             this.decimal_button.Click += new System.EventHandler(this.numbutton_Click);
@@ -178,6 +189,7 @@
             this.division_button.Name = "division_button";
             this.division_button.Size = new System.Drawing.Size(51, 49);
             this.division_button.TabIndex = 13;
+            this.division_button.TabStop = false;
             this.division_button.Text = "/";
             this.division_button.UseVisualStyleBackColor = true;
             this.division_button.Click += new System.EventHandler(this.operator_button_Click);
@@ -189,6 +201,7 @@
             this.multiplication_button.Name = "multiplication_button";
             this.multiplication_button.Size = new System.Drawing.Size(51, 49);
             this.multiplication_button.TabIndex = 14;
+            this.multiplication_button.TabStop = false;
             this.multiplication_button.Text = "*";
             this.multiplication_button.UseVisualStyleBackColor = true;
             this.multiplication_button.Click += new System.EventHandler(this.operator_button_Click);
@@ -200,6 +213,7 @@
             this.subtraction_button.Name = "subtraction_button";
             this.subtraction_button.Size = new System.Drawing.Size(51, 49);
             this.subtraction_button.TabIndex = 15;
+            this.subtraction_button.TabStop = false;
             this.subtraction_button.Text = "-";
             this.subtraction_button.UseVisualStyleBackColor = true;
             this.subtraction_button.Click += new System.EventHandler(this.operator_button_Click);
@@ -211,6 +225,7 @@
             this.addition_button.Name = "addition_button";
             this.addition_button.Size = new System.Drawing.Size(51, 49);
             this.addition_button.TabIndex = 16;
+            this.addition_button.TabStop = false;
             this.addition_button.Text = "+";
             this.addition_button.UseVisualStyleBackColor = true;
             this.addition_button.Click += new System.EventHandler(this.operator_button_Click);
@@ -233,6 +248,7 @@
             this.clear_button.Name = "clear_button";
             this.clear_button.Size = new System.Drawing.Size(51, 49);
             this.clear_button.TabIndex = 18;
+            this.clear_button.TabStop = false;
             this.clear_button.Text = "C";
             this.clear_button.UseVisualStyleBackColor = true;
             this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
@@ -244,6 +260,7 @@
             this.clear_entry_button.Name = "clear_entry_button";
             this.clear_entry_button.Size = new System.Drawing.Size(51, 49);
             this.clear_entry_button.TabIndex = 19;
+            this.clear_entry_button.TabStop = false;
             this.clear_entry_button.Text = "CE";
             this.clear_entry_button.UseVisualStyleBackColor = true;
             this.clear_entry_button.Click += new System.EventHandler(this.clear_entry_button_Click);
@@ -256,6 +273,7 @@
             this.result_box.Name = "result_box";
             this.result_box.Size = new System.Drawing.Size(279, 47);
             this.result_box.TabIndex = 20;
+            this.result_box.TabStop = false;
             this.result_box.Text = "0";
             this.result_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 

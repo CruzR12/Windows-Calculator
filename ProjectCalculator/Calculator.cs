@@ -110,6 +110,10 @@ namespace ProjectCalculator
                 case "2":
                     number_2.PerformClick();
                     break;
+
+                case "3":
+                    number_3.PerformClick();
+                    break;
                 default:
                     break;
             }

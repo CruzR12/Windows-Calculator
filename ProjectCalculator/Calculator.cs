@@ -80,7 +80,6 @@ namespace ProjectCalculator
             result_label.Text = result_label.Text + " " + value;
             operation_clicked = false;
             equals_clicked = true;
-
         }
 
         private void clear_entry_button_Click(object sender, EventArgs e)
@@ -94,6 +93,18 @@ namespace ProjectCalculator
             value = 0;
             result_box.Text = "0";
             result_label.Text = "";
+        }
+
+        private void Calculator_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch (e.KeyChar.ToString())
+            {
+                case "0":
+                    number_0.PerformClick();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

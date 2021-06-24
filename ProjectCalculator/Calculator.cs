@@ -158,6 +158,10 @@ namespace ProjectCalculator
                 case "/":
                     division_button.PerformClick();
                     break;
+
+                case "=":
+                    equals_button.PerformClick();
+                    break;
                 default:
                     break;
             }

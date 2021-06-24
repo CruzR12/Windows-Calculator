@@ -154,6 +154,10 @@ namespace ProjectCalculator
                 case "*":
                     multiplication_button.PerformClick();
                     break;
+
+                case "/":
+                    division_button.PerformClick();
+                    break;
                 default:
                     break;
             }

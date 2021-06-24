@@ -138,6 +138,10 @@ namespace ProjectCalculator
                 case "9":
                     number_9.PerformClick();
                     break;
+
+                case ".":
+                    decimal_button.PerformClick();
+                    break;
                 default:
                     break;
             }

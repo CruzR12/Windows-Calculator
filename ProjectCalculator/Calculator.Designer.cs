@@ -296,6 +296,8 @@
             this.Controls.Add(this.number_1);
             this.Controls.Add(this.number_0);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.MaximumSize = new System.Drawing.Size(319, 352);
+            this.MinimumSize = new System.Drawing.Size(319, 352);
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.ResumeLayout(false);

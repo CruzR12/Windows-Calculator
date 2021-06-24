@@ -34,8 +34,17 @@ namespace ProjectCalculator
             }
             operation_clicked = false;
             Button b = (Button)sender;
-            result_box.Text = result_box.Text + b.Text;
-            
+            if (b.Text == ".")
+            {
+                if (!result_box.Text.Contains("."))
+                {
+                    result_box.Text = result_box.Text + b.Text;
+                }
+            }
+            else
+            {
+                result_box.Text = result_box.Text + b.Text;
+            }
         }
         
         private void operator_button_Click(object sender, EventArgs e)

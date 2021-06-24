@@ -150,6 +150,10 @@ namespace ProjectCalculator
                 case "-":
                     subtraction_button.PerformClick();
                     break;
+
+                case "*":
+                    multiplication_button.PerformClick();
+                    break;
                 default:
                     break;
             }

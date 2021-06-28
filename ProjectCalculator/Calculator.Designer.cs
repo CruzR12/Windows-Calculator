@@ -59,6 +59,7 @@
             this.memadd_button = new System.Windows.Forms.Button();
             this.memsubt_button = new System.Windows.Forms.Button();
             this.memory_button = new System.Windows.Forms.Button();
+            this.memsave_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -288,7 +289,6 @@
             this.result_label.Size = new System.Drawing.Size(0, 15);
             this.result_label.TabIndex = 21;
             this.result_label.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.result_label.Click += new System.EventHandler(this.result_label_Click);
             // 
             // result_box
             // 
@@ -381,60 +381,71 @@
             this.memclear_button.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.memclear_button.Location = new System.Drawing.Point(7, 78);
             this.memclear_button.Name = "memclear_button";
-            this.memclear_button.Size = new System.Drawing.Size(55, 35);
+            this.memclear_button.Size = new System.Drawing.Size(45, 35);
             this.memclear_button.TabIndex = 19;
             this.memclear_button.TabStop = false;
             this.memclear_button.Text = "MC";
             this.memclear_button.UseVisualStyleBackColor = true;
-            this.memclear_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            this.memclear_button.Click += new System.EventHandler(this.memclear_button_Click);
             // 
             // memrecall_button
             // 
             this.memrecall_button.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.memrecall_button.Location = new System.Drawing.Point(67, 78);
+            this.memrecall_button.Location = new System.Drawing.Point(58, 78);
             this.memrecall_button.Name = "memrecall_button";
-            this.memrecall_button.Size = new System.Drawing.Size(55, 35);
+            this.memrecall_button.Size = new System.Drawing.Size(45, 35);
             this.memrecall_button.TabIndex = 19;
             this.memrecall_button.TabStop = false;
             this.memrecall_button.Text = "MR";
             this.memrecall_button.UseVisualStyleBackColor = true;
-            this.memrecall_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            this.memrecall_button.Click += new System.EventHandler(this.memrecall_button_Click);
             // 
             // memadd_button
             // 
             this.memadd_button.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.memadd_button.Location = new System.Drawing.Point(128, 78);
+            this.memadd_button.Location = new System.Drawing.Point(109, 78);
             this.memadd_button.Name = "memadd_button";
-            this.memadd_button.Size = new System.Drawing.Size(55, 35);
+            this.memadd_button.Size = new System.Drawing.Size(45, 35);
             this.memadd_button.TabIndex = 19;
             this.memadd_button.TabStop = false;
             this.memadd_button.Text = "M+";
             this.memadd_button.UseVisualStyleBackColor = true;
-            this.memadd_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            this.memadd_button.Click += new System.EventHandler(this.memadd_button_Click);
             // 
             // memsubt_button
             // 
             this.memsubt_button.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.memsubt_button.Location = new System.Drawing.Point(189, 78);
+            this.memsubt_button.Location = new System.Drawing.Point(160, 78);
             this.memsubt_button.Name = "memsubt_button";
-            this.memsubt_button.Size = new System.Drawing.Size(55, 35);
+            this.memsubt_button.Size = new System.Drawing.Size(45, 35);
             this.memsubt_button.TabIndex = 19;
             this.memsubt_button.TabStop = false;
             this.memsubt_button.Text = "M-";
             this.memsubt_button.UseVisualStyleBackColor = true;
-            this.memsubt_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            this.memsubt_button.Click += new System.EventHandler(this.memsubt_button_Click);
             // 
             // memory_button
             // 
             this.memory_button.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.memory_button.Location = new System.Drawing.Point(250, 78);
+            this.memory_button.Location = new System.Drawing.Point(260, 78);
             this.memory_button.Name = "memory_button";
-            this.memory_button.Size = new System.Drawing.Size(55, 35);
+            this.memory_button.Size = new System.Drawing.Size(45, 35);
             this.memory_button.TabIndex = 19;
             this.memory_button.TabStop = false;
             this.memory_button.Text = "M";
             this.memory_button.UseVisualStyleBackColor = true;
-            this.memory_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            // 
+            // memsave_button
+            // 
+            this.memsave_button.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.memsave_button.Location = new System.Drawing.Point(210, 78);
+            this.memsave_button.Name = "memsave_button";
+            this.memsave_button.Size = new System.Drawing.Size(45, 35);
+            this.memsave_button.TabIndex = 19;
+            this.memsave_button.TabStop = false;
+            this.memsave_button.Text = "MS";
+            this.memsave_button.UseVisualStyleBackColor = true;
+            this.memsave_button.Click += new System.EventHandler(this.memsave_button_Click);
             // 
             // Calculator
             // 
@@ -446,6 +457,7 @@
             this.Controls.Add(this.result_box);
             this.Controls.Add(this.backspace_button);
             this.Controls.Add(this.memory_button);
+            this.Controls.Add(this.memsave_button);
             this.Controls.Add(this.memsubt_button);
             this.Controls.Add(this.memadd_button);
             this.Controls.Add(this.memrecall_button);
@@ -516,6 +528,7 @@
         private System.Windows.Forms.Button memadd_button;
         private System.Windows.Forms.Button memsubt_button;
         private System.Windows.Forms.Button memory_button;
+        private System.Windows.Forms.Button memsave_button;
     }
 }
 

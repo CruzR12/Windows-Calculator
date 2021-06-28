@@ -21,6 +21,7 @@ namespace ProjectCalculator
         String operation = "";
         bool operation_clicked = false;
         bool equals_clicked = false;
+        decimal memorynum = 0;
 
         private void numbutton_Click(object sender, EventArgs e)
         {
@@ -295,12 +296,38 @@ namespace ProjectCalculator
 
         private void percent_button_Click(object sender, EventArgs e)
         {
-            result_box.Text = Convert.ToString(Double.Parse(result_box.Text) / 100);
+            result_box.Text = (Double.Parse(result_box.Text) / 100).ToString();
         }
 
-        private void result_label_Click(object sender, EventArgs e)
+        private void memclear_button_Click(object sender, EventArgs e)
         {
+            memorynum = 0;
+        }
 
+        private void memrecall_button_Click(object sender, EventArgs e)
+        {
+            result_box.Text = memorynum.ToString();
+        }
+
+        private void memsave_button_Click(object sender, EventArgs e)
+        {
+            memorynum = decimal.Parse(result_box.Text);
+        }
+
+        private void memadd_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text != "")
+            {
+                memorynum += decimal.Parse(result_box.Text);
+            }
+        }
+
+        private void memsubt_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text != "")
+            {
+                memorynum -= decimal.Parse(result_box.Text);
+            }
         }
     }
 }

@@ -292,5 +292,10 @@ namespace ProjectCalculator
                 result_box.Text = Convert.ToString(1 / Convert.ToDecimal(result_box.Text));
             }
         }
+
+        private void percent_button_Click(object sender, EventArgs e)
+        {
+            result_box.Text = Convert.ToString(Double.Parse(result_box.Text) / 100);
+        }
     }
 }

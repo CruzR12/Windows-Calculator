@@ -359,7 +359,7 @@
             this.percent_button.TabStop = false;
             this.percent_button.Text = "%";
             this.percent_button.UseVisualStyleBackColor = true;
-            this.percent_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            this.percent_button.Click += new System.EventHandler(this.percent_button_Click);
             // 
             // backspace_button
             // 

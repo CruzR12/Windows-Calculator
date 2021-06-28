@@ -347,7 +347,7 @@
             this.reciprocal_button.TabStop = false;
             this.reciprocal_button.Text = "1/x";
             this.reciprocal_button.UseVisualStyleBackColor = true;
-            this.reciprocal_button.Click += new System.EventHandler(this.clear_button_Click);
+            this.reciprocal_button.Click += new System.EventHandler(this.reciprocal_button_Click);
             // 
             // percent_button
             // 

@@ -297,5 +297,10 @@ namespace ProjectCalculator
         {
             result_box.Text = Convert.ToString(Double.Parse(result_box.Text) / 100);
         }
+
+        private void result_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

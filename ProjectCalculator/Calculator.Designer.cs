@@ -282,10 +282,13 @@
             this.result_label.BackColor = System.Drawing.SystemColors.Window;
             this.result_label.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.result_label.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.result_label.Location = new System.Drawing.Point(13, 25);
+            this.result_label.Location = new System.Drawing.Point(268, 7);
             this.result_label.Name = "result_label";
-            this.result_label.Size = new System.Drawing.Size(0, 15);
+            this.result_label.Size = new System.Drawing.Size(34, 15);
             this.result_label.TabIndex = 21;
+            this.result_label.Text = "reeth";
+            this.result_label.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.result_label.Click += new System.EventHandler(this.result_label_Click);
             // 
             // result_box
             // 

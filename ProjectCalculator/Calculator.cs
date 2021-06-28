@@ -77,6 +77,13 @@ namespace ProjectCalculator
             {
                 result_box.Text = (value / Double.Parse(result_box.Text)).ToString();
             }
+
+            if (result_box.Text.Contains("√"))
+            {
+                result_box.Text = result_box.Text.Remove(0, 1);
+                result_box.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(result_box.Text)));
+            }
+
             result_label.Text = result_label.Text + " " + value;
             operation_clicked = false;
             equals_clicked = true;
@@ -176,6 +183,18 @@ namespace ProjectCalculator
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void sqrt_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text.Contains("√"))
+            {
+                result_box.Text = result_box.Text.Remove(0, 1);
+            }
+            else
+            {
+                result_box.Text = "√" + result_box.Text;
             }
         }
     }

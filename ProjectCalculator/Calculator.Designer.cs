@@ -323,7 +323,7 @@
             this.sqrt_button.TabStop = false;
             this.sqrt_button.Text = "√";
             this.sqrt_button.UseVisualStyleBackColor = true;
-            this.sqrt_button.Click += new System.EventHandler(this.clear_button_Click);
+            this.sqrt_button.Click += new System.EventHandler(this.sqrt_button_Click);
             // 
             // square_button
             // 

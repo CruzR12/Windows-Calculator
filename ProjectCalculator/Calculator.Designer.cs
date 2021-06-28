@@ -374,7 +374,7 @@
             this.backspace_button.TabStop = false;
             this.backspace_button.Text = "⌫";
             this.backspace_button.UseVisualStyleBackColor = true;
-            this.backspace_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            this.backspace_button.Click += new System.EventHandler(this.backspace_button_Click);
             // 
             // memclear_button
             // 

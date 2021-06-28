@@ -85,7 +85,7 @@ namespace ProjectCalculator
                 result_box.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(result_box.Text)));
             }
 
-            result_label.Text = result_label.Text + " " + value;
+            result_label.Text += value;
             operation_clicked = false;
             equals_clicked = true;
         }
@@ -234,6 +234,10 @@ namespace ProjectCalculator
                 case "=":
                     equals_button.PerformClick();
                     break;
+
+                case "%":
+                    percent_button.PerformClick();
+                    break;
                 default:
                     break;
             }
@@ -327,6 +331,14 @@ namespace ProjectCalculator
             if (result_box.Text != "")
             {
                 memorynum -= decimal.Parse(result_box.Text);
+            }
+        }
+
+        private void backspace_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text.Length > 0)
+            {
+                result_box.Text = result_box.Text.Substring(0, result_box.Text.Length - 1);
             }
         }
     }

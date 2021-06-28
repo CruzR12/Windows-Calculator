@@ -49,6 +49,7 @@
             this.result_label = new System.Windows.Forms.Label();
             this.result_box = new System.Windows.Forms.TextBox();
             this.sign_button = new System.Windows.Forms.Button();
+            this.sqrt_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -302,6 +303,18 @@
             this.sign_button.Text = "±";
             this.sign_button.UseVisualStyleBackColor = true;
             // 
+            // sqrt_button
+            // 
+            this.sqrt_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.sqrt_button.Location = new System.Drawing.Point(159, 172);
+            this.sqrt_button.Name = "sqrt_button";
+            this.sqrt_button.Size = new System.Drawing.Size(70, 50);
+            this.sqrt_button.TabIndex = 18;
+            this.sqrt_button.TabStop = false;
+            this.sqrt_button.Text = "√";
+            this.sqrt_button.UseVisualStyleBackColor = true;
+            this.sqrt_button.Click += new System.EventHandler(this.clear_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,6 +324,7 @@
             this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
             this.Controls.Add(this.clear_entry_button);
+            this.Controls.Add(this.sqrt_button);
             this.Controls.Add(this.clear_button);
             this.Controls.Add(this.equals_button);
             this.Controls.Add(this.addition_button);
@@ -362,6 +376,7 @@
         private System.Windows.Forms.Label result_label;
         private System.Windows.Forms.TextBox result_box;
         private System.Windows.Forms.Button sign_button;
+        private System.Windows.Forms.Button sqrt_button;
     }
 }
 

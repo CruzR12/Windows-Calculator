@@ -52,6 +52,7 @@
             this.sqrt_button = new System.Windows.Forms.Button();
             this.square_button = new System.Windows.Forms.Button();
             this.reciprocal_button = new System.Windows.Forms.Button();
+            this.percent_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -341,6 +342,18 @@
             this.reciprocal_button.UseVisualStyleBackColor = true;
             this.reciprocal_button.Click += new System.EventHandler(this.clear_button_Click);
             // 
+            // percent_button
+            // 
+            this.percent_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.percent_button.Location = new System.Drawing.Point(7, 116);
+            this.percent_button.Name = "percent_button";
+            this.percent_button.Size = new System.Drawing.Size(70, 50);
+            this.percent_button.TabIndex = 19;
+            this.percent_button.TabStop = false;
+            this.percent_button.Text = "%";
+            this.percent_button.UseVisualStyleBackColor = true;
+            this.percent_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,6 +362,7 @@
             this.Controls.Add(this.sign_button);
             this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
+            this.Controls.Add(this.percent_button);
             this.Controls.Add(this.clear_entry_button);
             this.Controls.Add(this.reciprocal_button);
             this.Controls.Add(this.square_button);
@@ -407,6 +421,7 @@
         private System.Windows.Forms.Button sqrt_button;
         private System.Windows.Forms.Button square_button;
         private System.Windows.Forms.Button reciprocal_button;
+        private System.Windows.Forms.Button percent_button;
     }
 }
 

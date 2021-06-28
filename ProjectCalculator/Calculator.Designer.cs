@@ -51,6 +51,7 @@
             this.sign_button = new System.Windows.Forms.Button();
             this.sqrt_button = new System.Windows.Forms.Button();
             this.square_button = new System.Windows.Forms.Button();
+            this.reciprocal_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -328,6 +329,18 @@
             this.square_button.UseVisualStyleBackColor = true;
             this.square_button.Click += new System.EventHandler(this.clear_button_Click);
             // 
+            // reciprocal_button
+            // 
+            this.reciprocal_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.reciprocal_button.Location = new System.Drawing.Point(7, 172);
+            this.reciprocal_button.Name = "reciprocal_button";
+            this.reciprocal_button.Size = new System.Drawing.Size(70, 50);
+            this.reciprocal_button.TabIndex = 18;
+            this.reciprocal_button.TabStop = false;
+            this.reciprocal_button.Text = "1/x";
+            this.reciprocal_button.UseVisualStyleBackColor = true;
+            this.reciprocal_button.Click += new System.EventHandler(this.clear_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,6 +350,7 @@
             this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
             this.Controls.Add(this.clear_entry_button);
+            this.Controls.Add(this.reciprocal_button);
             this.Controls.Add(this.square_button);
             this.Controls.Add(this.sqrt_button);
             this.Controls.Add(this.clear_button);
@@ -392,6 +406,7 @@
         private System.Windows.Forms.Button sign_button;
         private System.Windows.Forms.Button sqrt_button;
         private System.Windows.Forms.Button square_button;
+        private System.Windows.Forms.Button reciprocal_button;
     }
 }
 

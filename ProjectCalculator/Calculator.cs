@@ -82,6 +82,18 @@ namespace ProjectCalculator
             equals_clicked = true;
         }
 
+        private void sign_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text.Contains("-"))
+            {
+                result_box.Text = result_box.Text.Remove(0,1);
+            }
+            else
+            {
+                result_box.Text = "-" + result_box.Text;
+            }
+        }
+
         private void clear_entry_button_Click(object sender, EventArgs e)
         {
             result_box.Text = "0";

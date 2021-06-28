@@ -311,6 +311,7 @@
             this.sign_button.TabStop = false;
             this.sign_button.Text = "±";
             this.sign_button.UseVisualStyleBackColor = true;
+            this.sign_button.Click += new System.EventHandler(this.sign_button_Click);
             // 
             // sqrt_button
             // 

@@ -53,6 +53,7 @@
             this.square_button = new System.Windows.Forms.Button();
             this.reciprocal_button = new System.Windows.Forms.Button();
             this.percent_button = new System.Windows.Forms.Button();
+            this.backspace_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -354,6 +355,18 @@
             this.percent_button.UseVisualStyleBackColor = true;
             this.percent_button.Click += new System.EventHandler(this.clear_entry_button_Click);
             // 
+            // backspace_button
+            // 
+            this.backspace_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.backspace_button.Location = new System.Drawing.Point(235, 116);
+            this.backspace_button.Name = "backspace_button";
+            this.backspace_button.Size = new System.Drawing.Size(70, 50);
+            this.backspace_button.TabIndex = 19;
+            this.backspace_button.TabStop = false;
+            this.backspace_button.Text = "⌫";
+            this.backspace_button.UseVisualStyleBackColor = true;
+            this.backspace_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,6 +375,7 @@
             this.Controls.Add(this.sign_button);
             this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
+            this.Controls.Add(this.backspace_button);
             this.Controls.Add(this.percent_button);
             this.Controls.Add(this.clear_entry_button);
             this.Controls.Add(this.reciprocal_button);
@@ -422,6 +436,7 @@
         private System.Windows.Forms.Button square_button;
         private System.Windows.Forms.Button reciprocal_button;
         private System.Windows.Forms.Button percent_button;
+        private System.Windows.Forms.Button backspace_button;
     }
 }
 

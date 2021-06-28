@@ -50,6 +50,7 @@
             this.result_box = new System.Windows.Forms.TextBox();
             this.sign_button = new System.Windows.Forms.Button();
             this.sqrt_button = new System.Windows.Forms.Button();
+            this.square_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_0
@@ -315,6 +316,18 @@
             this.sqrt_button.UseVisualStyleBackColor = true;
             this.sqrt_button.Click += new System.EventHandler(this.clear_button_Click);
             // 
+            // square_button
+            // 
+            this.square_button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.square_button.Location = new System.Drawing.Point(83, 172);
+            this.square_button.Name = "square_button";
+            this.square_button.Size = new System.Drawing.Size(70, 50);
+            this.square_button.TabIndex = 18;
+            this.square_button.TabStop = false;
+            this.square_button.Text = "x^2";
+            this.square_button.UseVisualStyleBackColor = true;
+            this.square_button.Click += new System.EventHandler(this.clear_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,6 +337,7 @@
             this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
             this.Controls.Add(this.clear_entry_button);
+            this.Controls.Add(this.square_button);
             this.Controls.Add(this.sqrt_button);
             this.Controls.Add(this.clear_button);
             this.Controls.Add(this.equals_button);
@@ -377,6 +391,7 @@
         private System.Windows.Forms.TextBox result_box;
         private System.Windows.Forms.Button sign_button;
         private System.Windows.Forms.Button sqrt_button;
+        private System.Windows.Forms.Button square_button;
     }
 }
 

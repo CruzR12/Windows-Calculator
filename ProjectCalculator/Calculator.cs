@@ -197,5 +197,10 @@ namespace ProjectCalculator
                 result_box.Text = "√" + result_box.Text;
             }
         }
+
+        private void square_button_Click(object sender, EventArgs e)
+        {
+            result_box.Text = Convert.ToString((Convert.ToDouble(result_box.Text) * Convert.ToDouble(result_box.Text)));
+        }
     }
 }

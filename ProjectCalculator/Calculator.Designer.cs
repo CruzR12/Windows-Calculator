@@ -335,7 +335,7 @@
             this.square_button.TabStop = false;
             this.square_button.Text = "x^2";
             this.square_button.UseVisualStyleBackColor = true;
-            this.square_button.Click += new System.EventHandler(this.clear_button_Click);
+            this.square_button.Click += new System.EventHandler(this.square_button_Click);
             // 
             // reciprocal_button
             // 

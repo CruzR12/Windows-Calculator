@@ -29,10 +29,6 @@ namespace ProjectCalculator
             {
                 result_box.Text = "";
             }
-            if (equals_clicked)
-            {
-                result_label.Text = "";
-            }
             operation_clicked = false;
             Button b = (Button)sender;
             if (b.Text == ".")
@@ -51,10 +47,20 @@ namespace ProjectCalculator
         private void operator_button_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            operation = b.Text;
-            value = Double.Parse(result_box.Text);
-            operation_clicked = true;
-            result_label.Text = value + " " + operation;
+            if (value != 0)
+            {
+                equals_button.PerformClick();
+                operation_clicked = true;
+                operation = b.Text;
+                result_label.Text = value + " " + operation;
+            }
+            else
+            {
+                operation = b.Text;
+                value = Double.Parse(result_box.Text);
+                operation_clicked = true;
+                result_label.Text = value + " " + operation;
+            }
         }
 
         private void equals_button_Click(object sender, EventArgs e)
@@ -84,10 +90,11 @@ namespace ProjectCalculator
                 result_box.Text = result_box.Text.Remove(0, 1);
                 result_box.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(result_box.Text)));
             }
-
-            result_label.Text += value;
             operation_clicked = false;
             equals_clicked = true;
+            value = Double.Parse(result_box.Text);
+            operation = "";
+            result_label.Text = "";
         }
 
         private void sign_button_Click(object sender, EventArgs e)

@@ -21,7 +21,7 @@ namespace ProjectCalculator
         String operation = "";
         bool operation_clicked = false;
         bool equals_clicked = false;
-        decimal memorynum = 0;
+        Double memorynum = 0;
 
         private void numbutton_Click(object sender, EventArgs e)
         {
@@ -77,7 +77,7 @@ namespace ProjectCalculator
 
             if (operation == "*")
             {
-                result_box.Text = (value * Double.Parse(result_box.Text)).ToString();
+                result_box.Text = (value * Double .Parse(result_box.Text)).ToString();
             }
 
             if (operation == "/")
@@ -88,7 +88,7 @@ namespace ProjectCalculator
             if (result_box.Text.Contains("√"))
             {
                 result_box.Text = result_box.Text.Remove(0, 1);
-                result_box.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(result_box.Text)));
+                result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
             }
             operation_clicked = false;
             equals_clicked = true;
@@ -264,7 +264,7 @@ namespace ProjectCalculator
 
         private void square_button_Click(object sender, EventArgs e)
         {
-            result_box.Text = Convert.ToString((Convert.ToDouble(result_box.Text) * Convert.ToDouble(result_box.Text)));
+            result_box.Text = ((Double.Parse(result_box.Text) * Double.Parse(result_box.Text))).ToString();
         }
 
         private void reciprocal_button_Click(object sender, EventArgs e)
@@ -301,7 +301,7 @@ namespace ProjectCalculator
             }
             else
             {
-                result_box.Text = Convert.ToString(1 / Convert.ToDecimal(result_box.Text));
+                result_box.Text = (1 / Double.Parse(result_box.Text)).ToString();
             }
         }
 
@@ -322,14 +322,14 @@ namespace ProjectCalculator
 
         private void memsave_button_Click(object sender, EventArgs e)
         {
-            memorynum = decimal.Parse(result_box.Text);
+            memorynum = Double.Parse(result_box.Text);
         }
 
         private void memadd_button_Click(object sender, EventArgs e)
         {
             if (result_box.Text != "")
             {
-                memorynum += decimal.Parse(result_box.Text);
+                memorynum += Double.Parse(result_box.Text);
             }
         }
 
@@ -337,7 +337,7 @@ namespace ProjectCalculator
         {
             if (result_box.Text != "")
             {
-                memorynum -= decimal.Parse(result_box.Text);
+                memorynum -= Double.Parse(result_box.Text);
             }
         }
 

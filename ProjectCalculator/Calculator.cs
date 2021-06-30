@@ -12,24 +12,19 @@ namespace ProjectCalculator
 {
     public partial class Calculator : Form
     {
+        Calculations calcmethod = new Calculations();
         public Calculator()
         {
             InitializeComponent();
         }
 
-        Double value = 0;
-        String operation = "";
-        bool operation_clicked = false;
-        bool equals_clicked = false;
-        Double memorynum = 0;
-
         private void numbutton_Click(object sender, EventArgs e)
         {
-            if ((result_box.Text == "0")||(operation_clicked))
+            if ((result_box.Text == "0")||(calcmethod.operation_clicked))
             {
                 result_box.Text = "";
             }
-            operation_clicked = false;
+            calcmethod.operation_clicked = false;
             Button b = (Button)sender;
             if (b.Text == ".")
             {
@@ -47,53 +42,89 @@ namespace ProjectCalculator
         private void operator_button_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (value != 0)
+            if (calcmethod.value != 0)
             {
                 equals_button.PerformClick();
-                operation_clicked = true;
-                operation = b.Text;
-                result_label.Text = value + " " + operation;
+                calcmethod.operation_clicked = true;
+                calcmethod.operation = b.Text;
+                result_label.Text = calcmethod.value + " " + calcmethod.operation;
             }
             else
             {
-                operation = b.Text;
-                value = Double.Parse(result_box.Text);
-                operation_clicked = true;
-                result_label.Text = value + " " + operation;
+                calcmethod.operation = b.Text;
+                calcmethod.value = Double.Parse(result_box.Text);
+                calcmethod.operation_clicked = true;
+                result_label.Text = calcmethod.value + " " + calcmethod.operation;
             }
         }
 
         private void equals_button_Click(object sender, EventArgs e)
         {
-            if (operation == "+")
+            if (calcmethod.operation == "+")
             {
-                result_box.Text = (value + Double.Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (calcmethod.value + Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (calcmethod.value + Double.Parse(result_box.Text)).ToString();
+                }
             }
 
-            if (operation == "-")
+            if (calcmethod.operation == "-")
             {
-                result_box.Text = (value - Double.Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (calcmethod.value - Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (calcmethod.value - Double.Parse(result_box.Text)).ToString();
+                }
             }
 
-            if (operation == "*")
+            if (calcmethod.operation == "*")
             {
-                result_box.Text = (value * Double .Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (calcmethod.value * Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (calcmethod.value * Double.Parse(result_box.Text)).ToString();
+                }
             }
 
-            if (operation == "/")
+            if (calcmethod.operation == "/")
             {
-                result_box.Text = (value / Double.Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (calcmethod.value / Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (calcmethod.value / Double.Parse(result_box.Text)).ToString();
+                }
             }
 
             if (result_box.Text.Contains("√"))
             {
-                result_box.Text = result_box.Text.Remove(0, 1);
+                sqrt_button.PerformClick();
                 result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
             }
-            operation_clicked = false;
-            equals_clicked = true;
-            value = Double.Parse(result_box.Text);
-            operation = "";
+            calcmethod.operation_clicked = false;
+            calcmethod.equals_clicked = true;
+            calcmethod.value = Double.Parse(result_box.Text);
+            calcmethod.operation = "";
             result_label.Text = "";
         }
 
@@ -112,28 +143,29 @@ namespace ProjectCalculator
         private void percent_button_Click(object sender, EventArgs e)
         {
             result_box.Text = (Double.Parse(result_box.Text) / 100).ToString();
+            calcmethod.operation_clicked = true;
         }
 
         private void memclear_button_Click(object sender, EventArgs e)
         {
-            memorynum = 0;
+            calcmethod.memorynum = 0;
         }
 
         private void memrecall_button_Click(object sender, EventArgs e)
         {
-            result_box.Text = memorynum.ToString();
+            result_box.Text = calcmethod.memorynum.ToString();
         }
 
         private void memsave_button_Click(object sender, EventArgs e)
         {
-            memorynum = Double.Parse(result_box.Text);
+            calcmethod.memorynum = Double.Parse(result_box.Text);
         }
 
         private void memadd_button_Click(object sender, EventArgs e)
         {
             if (result_box.Text != "")
             {
-                memorynum += Double.Parse(result_box.Text);
+                calcmethod.memorynum += Double.Parse(result_box.Text);
             }
         }
 
@@ -141,7 +173,7 @@ namespace ProjectCalculator
         {
             if (result_box.Text != "")
             {
-                memorynum -= Double.Parse(result_box.Text);
+                calcmethod.memorynum -= Double.Parse(result_box.Text);
             }
         }
 
@@ -163,11 +195,13 @@ namespace ProjectCalculator
             {
                 result_box.Text = "√" + result_box.Text;
             }
+            calcmethod.operation_clicked = true;
         }
 
         private void square_button_Click(object sender, EventArgs e)
         {
             result_box.Text = ((Double.Parse(result_box.Text) * Double.Parse(result_box.Text))).ToString();
+            calcmethod.operation_clicked = true;
         }
 
         private void reciprocal_button_Click(object sender, EventArgs e)
@@ -206,6 +240,7 @@ namespace ProjectCalculator
             {
                 result_box.Text = (1 / Double.Parse(result_box.Text)).ToString();
             }
+            calcmethod.operation_clicked = true;
         }
 
         private void clear_entry_button_Click(object sender, EventArgs e)
@@ -242,7 +277,7 @@ namespace ProjectCalculator
         private void clear_button_Click(object sender, EventArgs e)
         {
             result_box.Clear();
-            value = 0;
+            calcmethod.value = 0;
             result_box.Text = "0";
             result_label.Text = "";
             reciprocal_button.Enabled = true;

@@ -112,6 +112,7 @@ namespace ProjectCalculator
         private void percent_button_Click(object sender, EventArgs e)
         {
             result_box.Text = (Double.Parse(result_box.Text) / 100).ToString();
+            operation_clicked = true;
         }
 
         private void memclear_button_Click(object sender, EventArgs e)
@@ -163,11 +164,13 @@ namespace ProjectCalculator
             {
                 result_box.Text = "√" + result_box.Text;
             }
+            operation_clicked = true;
         }
 
         private void square_button_Click(object sender, EventArgs e)
         {
             result_box.Text = ((Double.Parse(result_box.Text) * Double.Parse(result_box.Text))).ToString();
+            operation_clicked = true;
         }
 
         private void reciprocal_button_Click(object sender, EventArgs e)
@@ -206,6 +209,7 @@ namespace ProjectCalculator
             {
                 result_box.Text = (1 / Double.Parse(result_box.Text)).ToString();
             }
+            operation_clicked = true;
         }
 
         private void clear_entry_button_Click(object sender, EventArgs e)

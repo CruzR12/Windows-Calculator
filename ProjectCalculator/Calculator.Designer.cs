@@ -72,7 +72,6 @@
             this.number_0.TabStop = false;
             this.number_0.Text = "0";
             this.number_0.UseVisualStyleBackColor = true;
-            this.number_0.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_1
             // 
@@ -84,7 +83,7 @@
             this.number_1.TabStop = false;
             this.number_1.Text = "1";
             this.number_1.UseVisualStyleBackColor = true;
-            this.number_1.Click += new System.EventHandler(this.numbutton_Click);
+            this.number_1.Click += new System.EventHandler(this.number_1_Click);
             // 
             // number_2
             // 
@@ -96,7 +95,6 @@
             this.number_2.TabStop = false;
             this.number_2.Text = "2";
             this.number_2.UseVisualStyleBackColor = true;
-            this.number_2.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_3
             // 
@@ -108,7 +106,6 @@
             this.number_3.TabStop = false;
             this.number_3.Text = "3";
             this.number_3.UseVisualStyleBackColor = true;
-            this.number_3.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_4
             // 
@@ -120,7 +117,6 @@
             this.number_4.TabStop = false;
             this.number_4.Text = "4";
             this.number_4.UseVisualStyleBackColor = true;
-            this.number_4.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_5
             // 
@@ -132,7 +128,6 @@
             this.number_5.TabStop = false;
             this.number_5.Text = "5";
             this.number_5.UseVisualStyleBackColor = true;
-            this.number_5.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_6
             // 
@@ -144,7 +139,6 @@
             this.number_6.TabStop = false;
             this.number_6.Text = "6";
             this.number_6.UseVisualStyleBackColor = true;
-            this.number_6.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_7
             // 
@@ -156,7 +150,6 @@
             this.number_7.TabStop = false;
             this.number_7.Text = "7";
             this.number_7.UseVisualStyleBackColor = true;
-            this.number_7.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_8
             // 
@@ -168,7 +161,6 @@
             this.number_8.TabStop = false;
             this.number_8.Text = "8";
             this.number_8.UseVisualStyleBackColor = true;
-            this.number_8.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // number_9
             // 
@@ -180,7 +172,6 @@
             this.number_9.TabStop = false;
             this.number_9.Text = "9";
             this.number_9.UseVisualStyleBackColor = true;
-            this.number_9.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // decimal_button
             // 
@@ -192,7 +183,6 @@
             this.decimal_button.TabStop = false;
             this.decimal_button.Text = ".";
             this.decimal_button.UseVisualStyleBackColor = true;
-            this.decimal_button.Click += new System.EventHandler(this.numbutton_Click);
             // 
             // division_button
             // 
@@ -204,7 +194,6 @@
             this.division_button.TabStop = false;
             this.division_button.Text = "/";
             this.division_button.UseVisualStyleBackColor = true;
-            this.division_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // multiplication_button
             // 
@@ -216,7 +205,6 @@
             this.multiplication_button.TabStop = false;
             this.multiplication_button.Text = "*";
             this.multiplication_button.UseVisualStyleBackColor = true;
-            this.multiplication_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // subtraction_button
             // 
@@ -228,7 +216,6 @@
             this.subtraction_button.TabStop = false;
             this.subtraction_button.Text = "-";
             this.subtraction_button.UseVisualStyleBackColor = true;
-            this.subtraction_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // addition_button
             // 
@@ -240,7 +227,6 @@
             this.addition_button.TabStop = false;
             this.addition_button.Text = "+";
             this.addition_button.UseVisualStyleBackColor = true;
-            this.addition_button.Click += new System.EventHandler(this.operator_button_Click);
             // 
             // equals_button
             // 

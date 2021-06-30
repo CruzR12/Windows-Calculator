@@ -12,32 +12,77 @@ namespace ProjectCalculator
 {
     public partial class Calculator : Form
     {
-        Calculations calcmethod = new Calculations();
         public Calculator()
         {
             InitializeComponent();
         }
 
+        Double value = 0;
+        String operation = "";
+        bool operation_clicked = false;
+        bool equals_clicked = false;
+        Double memorynum = 0;
+
+        private void numbutton_Click(object sender, EventArgs e)
+        {
+            if ((result_box.Text == "0")||(operation_clicked))
+            {
+                result_box.Text = "";
+            }
+            operation_clicked = false;
+            Button b = (Button)sender;
+            if (b.Text == ".")
+            {
+                if (!result_box.Text.Contains("."))
+                {
+                    result_box.Text = result_box.Text + b.Text;
+                }
+            }
+            else
+            {
+                result_box.Text = result_box.Text + b.Text;
+            }
+        }
+        
+        private void operator_button_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (value != 0)
+            {
+                equals_button.PerformClick();
+                operation_clicked = true;
+                operation = b.Text;
+                result_label.Text = value + " " + operation;
+            }
+            else
+            {
+                operation = b.Text;
+                value = Double.Parse(result_box.Text);
+                operation_clicked = true;
+                result_label.Text = value + " " + operation;
+            }
+        }
+
         private void equals_button_Click(object sender, EventArgs e)
         {
-            if (calcmethod.operation == "+")
+            if (operation == "+")
             {
-                result_box.Text = (calcmethod.value + Double.Parse(result_box.Text)).ToString();
+                result_box.Text = (value + Double.Parse(result_box.Text)).ToString();
             }
 
-            if (calcmethod.operation == "-")
+            if (operation == "-")
             {
-                result_box.Text = (calcmethod.value - Double.Parse(result_box.Text)).ToString();
+                result_box.Text = (value - Double.Parse(result_box.Text)).ToString();
             }
 
-            if (calcmethod.operation == "*")
+            if (operation == "*")
             {
-                result_box.Text = (calcmethod.value * Double .Parse(result_box.Text)).ToString();
+                result_box.Text = (value * Double .Parse(result_box.Text)).ToString();
             }
 
-            if (calcmethod.operation == "/")
+            if (operation == "/")
             {
-                result_box.Text = (calcmethod.value / Double.Parse(result_box.Text)).ToString();
+                result_box.Text = (value / Double.Parse(result_box.Text)).ToString();
             }
 
             if (result_box.Text.Contains("√"))
@@ -45,9 +90,10 @@ namespace ProjectCalculator
                 result_box.Text = result_box.Text.Remove(0, 1);
                 result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
             }
-            calcmethod.operation_clicked = false;
-            calcmethod.value = Double.Parse(result_box.Text);
-            calcmethod.operation = "";
+            operation_clicked = false;
+            equals_clicked = true;
+            value = Double.Parse(result_box.Text);
+            operation = "";
             result_label.Text = "";
         }
 
@@ -70,24 +116,24 @@ namespace ProjectCalculator
 
         private void memclear_button_Click(object sender, EventArgs e)
         {
-            calcmethod.memorynum = 0;
+            memorynum = 0;
         }
 
         private void memrecall_button_Click(object sender, EventArgs e)
         {
-            result_box.Text = calcmethod.memorynum.ToString();
+            result_box.Text = memorynum.ToString();
         }
 
         private void memsave_button_Click(object sender, EventArgs e)
         {
-            calcmethod.memorynum = Double.Parse(result_box.Text);
+            memorynum = Double.Parse(result_box.Text);
         }
 
         private void memadd_button_Click(object sender, EventArgs e)
         {
             if (result_box.Text != "")
             {
-                calcmethod.memorynum += Double.Parse(result_box.Text);
+                memorynum += Double.Parse(result_box.Text);
             }
         }
 
@@ -95,7 +141,7 @@ namespace ProjectCalculator
         {
             if (result_box.Text != "")
             {
-                calcmethod.memorynum -= Double.Parse(result_box.Text);
+                memorynum -= Double.Parse(result_box.Text);
             }
         }
 
@@ -196,7 +242,7 @@ namespace ProjectCalculator
         private void clear_button_Click(object sender, EventArgs e)
         {
             result_box.Clear();
-            calcmethod.value = 0;
+            value = 0;
             result_box.Text = "0";
             result_label.Text = "";
             reciprocal_button.Enabled = true;
@@ -301,13 +347,6 @@ namespace ProjectCalculator
                 default:
                     break;
             }
-        }
-
-        private void number_1_Click(object sender, EventArgs e)
-        {
-            result_box.Text = calcmethod.textresult;
-            calcmethod.number();
-            calcmethod.numberclicked = "1";
         }
     }
 }

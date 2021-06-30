@@ -20,12 +20,11 @@ namespace ProjectCalculator
 
         private void numbutton_Click(object sender, EventArgs e)
         {
+            Button b = (Button)sender;
             if ((result_box.Text == "0")||(calcmethod.operation_clicked))
             {
                 result_box.Text = "";
             }
-            calcmethod.operation_clicked = false;
-            Button b = (Button)sender;
             if (b.Text == ".")
             {
                 if (!result_box.Text.Contains("."))
@@ -37,6 +36,7 @@ namespace ProjectCalculator
             {
                 result_box.Text = result_box.Text + b.Text;
             }
+            calcmethod.operation_clicked = false;
         }
         
         private void operator_button_Click(object sender, EventArgs e)
@@ -44,7 +44,8 @@ namespace ProjectCalculator
             Button b = (Button)sender;
             if (calcmethod.value != 0)
             {
-                equals_button.PerformClick();
+                calcmethod.value2 = result_box.Text;
+                calcmethod.result();
                 calcmethod.operation_clicked = true;
                 calcmethod.operation = b.Text;
                 result_label.Text = calcmethod.value + " " + calcmethod.operation;
@@ -60,71 +61,9 @@ namespace ProjectCalculator
 
         private void equals_button_Click(object sender, EventArgs e)
         {
-            if (calcmethod.operation == "+")
-            {
-                if (result_box.Text.Contains("√"))
-                {
-                    sqrt_button.PerformClick();
-                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
-                    result_box.Text = (calcmethod.value + Double.Parse(result_box.Text)).ToString();
-                }
-                else
-                {
-                    result_box.Text = (calcmethod.value + Double.Parse(result_box.Text)).ToString();
-                }
-            }
-
-            if (calcmethod.operation == "-")
-            {
-                if (result_box.Text.Contains("√"))
-                {
-                    sqrt_button.PerformClick();
-                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
-                    result_box.Text = (calcmethod.value - Double.Parse(result_box.Text)).ToString();
-                }
-                else
-                {
-                    result_box.Text = (calcmethod.value - Double.Parse(result_box.Text)).ToString();
-                }
-            }
-
-            if (calcmethod.operation == "*")
-            {
-                if (result_box.Text.Contains("√"))
-                {
-                    sqrt_button.PerformClick();
-                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
-                    result_box.Text = (calcmethod.value * Double.Parse(result_box.Text)).ToString();
-                }
-                else
-                {
-                    result_box.Text = (calcmethod.value * Double.Parse(result_box.Text)).ToString();
-                }
-            }
-
-            if (calcmethod.operation == "/")
-            {
-                if (result_box.Text.Contains("√"))
-                {
-                    sqrt_button.PerformClick();
-                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
-                    result_box.Text = (calcmethod.value / Double.Parse(result_box.Text)).ToString();
-                }
-                else
-                {
-                    result_box.Text = (calcmethod.value / Double.Parse(result_box.Text)).ToString();
-                }
-            }
-
-            if (result_box.Text.Contains("√"))
-            {
-                sqrt_button.PerformClick();
-                result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
-            }
-            calcmethod.operation_clicked = false;
-            calcmethod.equals_clicked = true;
-            calcmethod.value = Double.Parse(result_box.Text);
-            calcmethod.operation = "";
+            calcmethod.value2 = result_box.Text;
+            calcmethod.result();
+            result_box.Text = calcmethod.value2;
             result_label.Text = "";
         }
 
@@ -187,14 +126,7 @@ namespace ProjectCalculator
 
         private void sqrt_button_Click(object sender, EventArgs e)
         {
-            if (result_box.Text.Contains("√"))
-            {
-                result_box.Text = result_box.Text.Remove(0, 1);
-            }
-            else
-            {
-                result_box.Text = "√" + result_box.Text;
-            }
+            result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
             calcmethod.operation_clicked = true;
         }
 

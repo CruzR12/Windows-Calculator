@@ -109,6 +109,105 @@ namespace ProjectCalculator
             }
         }
 
+        private void percent_button_Click(object sender, EventArgs e)
+        {
+            result_box.Text = (Double.Parse(result_box.Text) / 100).ToString();
+        }
+
+        private void memclear_button_Click(object sender, EventArgs e)
+        {
+            memorynum = 0;
+        }
+
+        private void memrecall_button_Click(object sender, EventArgs e)
+        {
+            result_box.Text = memorynum.ToString();
+        }
+
+        private void memsave_button_Click(object sender, EventArgs e)
+        {
+            memorynum = Double.Parse(result_box.Text);
+        }
+
+        private void memadd_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text != "")
+            {
+                memorynum += Double.Parse(result_box.Text);
+            }
+        }
+
+        private void memsubt_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text != "")
+            {
+                memorynum -= Double.Parse(result_box.Text);
+            }
+        }
+
+        private void backspace_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text.Length > 0)
+            {
+                result_box.Text = result_box.Text.Substring(0, result_box.Text.Length - 1);
+            }
+        }
+
+        private void sqrt_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text.Contains("√"))
+            {
+                result_box.Text = result_box.Text.Remove(0, 1);
+            }
+            else
+            {
+                result_box.Text = "√" + result_box.Text;
+            }
+        }
+
+        private void square_button_Click(object sender, EventArgs e)
+        {
+            result_box.Text = ((Double.Parse(result_box.Text) * Double.Parse(result_box.Text))).ToString();
+        }
+
+        private void reciprocal_button_Click(object sender, EventArgs e)
+        {
+            if (result_box.Text == "0")
+            {
+                result_box.Text = "Cannot divide by zero";
+                reciprocal_button.Enabled = false;
+                percent_button.Enabled = false;
+                sqrt_button.Enabled = false;
+                square_button.Enabled = false;
+                division_button.Enabled = false;
+                multiplication_button.Enabled = false;
+                addition_button.Enabled = false;
+                subtraction_button.Enabled = false;
+                number_0.Enabled = false;
+                number_1.Enabled = false;
+                number_2.Enabled = false;
+                number_3.Enabled = false;
+                number_4.Enabled = false;
+                number_5.Enabled = false;
+                number_6.Enabled = false;
+                number_7.Enabled = false;
+                number_8.Enabled = false;
+                number_9.Enabled = false;
+                sign_button.Enabled = false;
+                decimal_button.Enabled = false;
+                equals_button.Enabled = false;
+                memadd_button.Enabled = false;
+                memsubt_button.Enabled = false;
+                memory_button.Enabled = false;
+                memrecall_button.Enabled = false;
+                memclear_button.Enabled = false;
+            }
+            else
+            {
+                result_box.Text = (1 / Double.Parse(result_box.Text)).ToString();
+            }
+        }
+
         private void clear_entry_button_Click(object sender, EventArgs e)
         {
             result_box.Text = "0";
@@ -247,105 +346,6 @@ namespace ProjectCalculator
                     break;
                 default:
                     break;
-            }
-        }
-
-        private void sqrt_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text.Contains("√"))
-            {
-                result_box.Text = result_box.Text.Remove(0, 1);
-            }
-            else
-            {
-                result_box.Text = "√" + result_box.Text;
-            }
-        }
-
-        private void square_button_Click(object sender, EventArgs e)
-        {
-            result_box.Text = ((Double.Parse(result_box.Text) * Double.Parse(result_box.Text))).ToString();
-        }
-
-        private void reciprocal_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text == "0")
-            {
-                result_box.Text = "Cannot divide by zero";
-                reciprocal_button.Enabled = false;
-                percent_button.Enabled = false;
-                sqrt_button.Enabled = false;
-                square_button.Enabled = false;
-                division_button.Enabled = false;
-                multiplication_button.Enabled = false;
-                addition_button.Enabled = false;
-                subtraction_button.Enabled = false;
-                number_0.Enabled = false;
-                number_1.Enabled = false;
-                number_2.Enabled = false;
-                number_3.Enabled = false;
-                number_4.Enabled = false;
-                number_5.Enabled = false;
-                number_6.Enabled = false;
-                number_7.Enabled = false;
-                number_8.Enabled = false;
-                number_9.Enabled = false;
-                sign_button.Enabled = false;
-                decimal_button.Enabled = false;
-                equals_button.Enabled = false;
-                memadd_button.Enabled = false;
-                memsubt_button.Enabled = false;
-                memory_button.Enabled = false;
-                memrecall_button.Enabled = false;
-                memclear_button.Enabled = false;
-            }
-            else
-            {
-                result_box.Text = (1 / Double.Parse(result_box.Text)).ToString();
-            }
-        }
-
-        private void percent_button_Click(object sender, EventArgs e)
-        {
-            result_box.Text = (Double.Parse(result_box.Text) / 100).ToString();
-        }
-
-        private void memclear_button_Click(object sender, EventArgs e)
-        {
-            memorynum = 0;
-        }
-
-        private void memrecall_button_Click(object sender, EventArgs e)
-        {
-            result_box.Text = memorynum.ToString();
-        }
-
-        private void memsave_button_Click(object sender, EventArgs e)
-        {
-            memorynum = Double.Parse(result_box.Text);
-        }
-
-        private void memadd_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text != "")
-            {
-                memorynum += Double.Parse(result_box.Text);
-            }
-        }
-
-        private void memsubt_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text != "")
-            {
-                memorynum -= Double.Parse(result_box.Text);
-            }
-        }
-
-        private void backspace_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text.Length > 0)
-            {
-                result_box.Text = result_box.Text.Substring(0, result_box.Text.Length - 1);
             }
         }
     }

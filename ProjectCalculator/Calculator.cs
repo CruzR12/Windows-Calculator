@@ -20,7 +20,6 @@ namespace ProjectCalculator
         Double value = 0;
         String operation = "";
         bool operation_clicked = false;
-        bool equals_clicked = false;
         Double memorynum = 0;
 
         private void numbutton_Click(object sender, EventArgs e)
@@ -54,6 +53,12 @@ namespace ProjectCalculator
                 operation = b.Text;
                 result_label.Text = value + " " + operation;
             }
+            if (result_box.Text.Contains("√"))
+            {
+                equals_button.PerformClick();
+                operation = b.Text;
+                result_label.Text = value + " " + operation;
+            }
             else
             {
                 operation = b.Text;
@@ -67,31 +72,66 @@ namespace ProjectCalculator
         {
             if (operation == "+")
             {
-                result_box.Text = (value + Double.Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (value + Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (value + Double.Parse(result_box.Text)).ToString();
+                }
             }
 
             if (operation == "-")
             {
-                result_box.Text = (value - Double.Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (value - Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (value - Double.Parse(result_box.Text)).ToString();
+                }
             }
 
             if (operation == "*")
             {
-                result_box.Text = (value * Double .Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (value * Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (value * Double.Parse(result_box.Text)).ToString();
+                }
             }
 
             if (operation == "/")
             {
-                result_box.Text = (value / Double.Parse(result_box.Text)).ToString();
+                if (result_box.Text.Contains("√"))
+                {
+                    sqrt_button.PerformClick();
+                    result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
+                    result_box.Text = (value / Double.Parse(result_box.Text)).ToString();
+                }
+                else
+                {
+                    result_box.Text = (value / Double.Parse(result_box.Text)).ToString();
+                }
             }
 
             if (result_box.Text.Contains("√"))
             {
-                result_box.Text = result_box.Text.Remove(0, 1);
+                sqrt_button.PerformClick();
                 result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
             }
-            operation_clicked = false;
-            equals_clicked = true;
+            operation_clicked = true;
             value = Double.Parse(result_box.Text);
             operation = "";
             result_label.Text = "";

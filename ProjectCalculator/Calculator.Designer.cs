@@ -65,12 +65,12 @@
             this.more_button = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.more_panel = new System.Windows.Forms.Panel();
-            this.calculator_label = new System.Windows.Forms.Label();
-            this.standard_label = new System.Windows.Forms.Label();
-            this.scientific_label = new System.Windows.Forms.Label();
-            this.graphing_label = new System.Windows.Forms.Label();
-            this.prog_label = new System.Windows.Forms.Label();
             this.datecalc_label = new System.Windows.Forms.Label();
+            this.prog_label = new System.Windows.Forms.Label();
+            this.graphing_label = new System.Windows.Forms.Label();
+            this.scientific_label = new System.Windows.Forms.Label();
+            this.standard_label = new System.Windows.Forms.Label();
+            this.calculator_label = new System.Windows.Forms.Label();
             this.mempanel.SuspendLayout();
             this.more_panel.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +84,7 @@
             this.number_0.Location = new System.Drawing.Point(79, 431);
             this.number_0.Name = "number_0";
             this.number_0.Size = new System.Drawing.Size(70, 50);
-            this.number_0.TabIndex = 0;
+            this.number_0.TabIndex = 1;
             this.number_0.TabStop = false;
             this.number_0.Text = "0";
             this.number_0.UseVisualStyleBackColor = false;
@@ -99,7 +99,7 @@
             this.number_1.Location = new System.Drawing.Point(3, 375);
             this.number_1.Name = "number_1";
             this.number_1.Size = new System.Drawing.Size(70, 50);
-            this.number_1.TabIndex = 3;
+            this.number_1.TabIndex = 2;
             this.number_1.TabStop = false;
             this.number_1.Text = "1";
             this.number_1.UseVisualStyleBackColor = false;
@@ -114,7 +114,7 @@
             this.number_2.Location = new System.Drawing.Point(79, 375);
             this.number_2.Name = "number_2";
             this.number_2.Size = new System.Drawing.Size(70, 50);
-            this.number_2.TabIndex = 4;
+            this.number_2.TabIndex = 2;
             this.number_2.TabStop = false;
             this.number_2.Text = "2";
             this.number_2.UseVisualStyleBackColor = false;
@@ -129,7 +129,7 @@
             this.number_3.Location = new System.Drawing.Point(155, 375);
             this.number_3.Name = "number_3";
             this.number_3.Size = new System.Drawing.Size(70, 50);
-            this.number_3.TabIndex = 5;
+            this.number_3.TabIndex = 2;
             this.number_3.TabStop = false;
             this.number_3.Text = "3";
             this.number_3.UseVisualStyleBackColor = false;
@@ -144,7 +144,7 @@
             this.number_4.Location = new System.Drawing.Point(3, 319);
             this.number_4.Name = "number_4";
             this.number_4.Size = new System.Drawing.Size(70, 50);
-            this.number_4.TabIndex = 6;
+            this.number_4.TabIndex = 3;
             this.number_4.TabStop = false;
             this.number_4.Text = "4";
             this.number_4.UseVisualStyleBackColor = false;
@@ -159,7 +159,7 @@
             this.number_5.Location = new System.Drawing.Point(79, 319);
             this.number_5.Name = "number_5";
             this.number_5.Size = new System.Drawing.Size(70, 50);
-            this.number_5.TabIndex = 7;
+            this.number_5.TabIndex = 3;
             this.number_5.TabStop = false;
             this.number_5.Text = "5";
             this.number_5.UseVisualStyleBackColor = false;
@@ -174,7 +174,7 @@
             this.number_6.Location = new System.Drawing.Point(155, 319);
             this.number_6.Name = "number_6";
             this.number_6.Size = new System.Drawing.Size(70, 50);
-            this.number_6.TabIndex = 8;
+            this.number_6.TabIndex = 3;
             this.number_6.TabStop = false;
             this.number_6.Text = "6";
             this.number_6.UseVisualStyleBackColor = false;
@@ -189,7 +189,7 @@
             this.number_7.Location = new System.Drawing.Point(3, 263);
             this.number_7.Name = "number_7";
             this.number_7.Size = new System.Drawing.Size(70, 50);
-            this.number_7.TabIndex = 9;
+            this.number_7.TabIndex = 4;
             this.number_7.TabStop = false;
             this.number_7.Text = "7";
             this.number_7.UseVisualStyleBackColor = false;
@@ -204,7 +204,7 @@
             this.number_8.Location = new System.Drawing.Point(79, 263);
             this.number_8.Name = "number_8";
             this.number_8.Size = new System.Drawing.Size(70, 50);
-            this.number_8.TabIndex = 10;
+            this.number_8.TabIndex = 4;
             this.number_8.TabStop = false;
             this.number_8.Text = "8";
             this.number_8.UseVisualStyleBackColor = false;
@@ -219,7 +219,7 @@
             this.number_9.Location = new System.Drawing.Point(155, 263);
             this.number_9.Name = "number_9";
             this.number_9.Size = new System.Drawing.Size(70, 50);
-            this.number_9.TabIndex = 11;
+            this.number_9.TabIndex = 4;
             this.number_9.TabStop = false;
             this.number_9.Text = "9";
             this.number_9.UseVisualStyleBackColor = false;
@@ -234,7 +234,7 @@
             this.decimal_button.Location = new System.Drawing.Point(155, 431);
             this.decimal_button.Name = "decimal_button";
             this.decimal_button.Size = new System.Drawing.Size(70, 50);
-            this.decimal_button.TabIndex = 12;
+            this.decimal_button.TabIndex = 1;
             this.decimal_button.TabStop = false;
             this.decimal_button.Text = ".";
             this.decimal_button.UseVisualStyleBackColor = false;
@@ -249,7 +249,7 @@
             this.division_button.Location = new System.Drawing.Point(231, 207);
             this.division_button.Name = "division_button";
             this.division_button.Size = new System.Drawing.Size(70, 50);
-            this.division_button.TabIndex = 13;
+            this.division_button.TabIndex = 20;
             this.division_button.TabStop = false;
             this.division_button.Text = "/";
             this.division_button.UseVisualStyleBackColor = false;
@@ -264,7 +264,7 @@
             this.multiplication_button.Location = new System.Drawing.Point(231, 263);
             this.multiplication_button.Name = "multiplication_button";
             this.multiplication_button.Size = new System.Drawing.Size(70, 50);
-            this.multiplication_button.TabIndex = 14;
+            this.multiplication_button.TabIndex = 4;
             this.multiplication_button.TabStop = false;
             this.multiplication_button.Text = "*";
             this.multiplication_button.UseVisualStyleBackColor = false;
@@ -279,7 +279,7 @@
             this.subtraction_button.Location = new System.Drawing.Point(231, 319);
             this.subtraction_button.Name = "subtraction_button";
             this.subtraction_button.Size = new System.Drawing.Size(70, 50);
-            this.subtraction_button.TabIndex = 15;
+            this.subtraction_button.TabIndex = 3;
             this.subtraction_button.TabStop = false;
             this.subtraction_button.Text = "-";
             this.subtraction_button.UseVisualStyleBackColor = false;
@@ -294,7 +294,7 @@
             this.addition_button.Location = new System.Drawing.Point(231, 375);
             this.addition_button.Name = "addition_button";
             this.addition_button.Size = new System.Drawing.Size(70, 50);
-            this.addition_button.TabIndex = 16;
+            this.addition_button.TabIndex = 2;
             this.addition_button.TabStop = false;
             this.addition_button.Text = "+";
             this.addition_button.UseVisualStyleBackColor = false;
@@ -309,7 +309,7 @@
             this.equals_button.Location = new System.Drawing.Point(231, 431);
             this.equals_button.Name = "equals_button";
             this.equals_button.Size = new System.Drawing.Size(70, 50);
-            this.equals_button.TabIndex = 17;
+            this.equals_button.TabIndex = 1;
             this.equals_button.Text = "=";
             this.equals_button.UseVisualStyleBackColor = false;
             this.equals_button.Click += new System.EventHandler(this.equals_button_Click);
@@ -323,7 +323,7 @@
             this.clear_button.Location = new System.Drawing.Point(155, 151);
             this.clear_button.Name = "clear_button";
             this.clear_button.Size = new System.Drawing.Size(70, 50);
-            this.clear_button.TabIndex = 18;
+            this.clear_button.TabIndex = 22;
             this.clear_button.TabStop = false;
             this.clear_button.Text = "C";
             this.clear_button.UseVisualStyleBackColor = false;
@@ -338,7 +338,7 @@
             this.clear_entry_button.Location = new System.Drawing.Point(79, 151);
             this.clear_entry_button.Name = "clear_entry_button";
             this.clear_entry_button.Size = new System.Drawing.Size(70, 50);
-            this.clear_entry_button.TabIndex = 19;
+            this.clear_entry_button.TabIndex = 23;
             this.clear_entry_button.TabStop = false;
             this.clear_entry_button.Text = "CE";
             this.clear_entry_button.UseVisualStyleBackColor = false;
@@ -348,12 +348,12 @@
             // 
             this.result_label.AutoSize = true;
             this.result_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.result_label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.result_label.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.result_label.ForeColor = System.Drawing.Color.White;
             this.result_label.Location = new System.Drawing.Point(6, 41);
             this.result_label.Name = "result_label";
             this.result_label.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.result_label.Size = new System.Drawing.Size(0, 15);
+            this.result_label.Size = new System.Drawing.Size(0, 19);
             this.result_label.TabIndex = 21;
             this.result_label.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
@@ -362,7 +362,6 @@
             this.result_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.result_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.result_box.Cursor = System.Windows.Forms.Cursors.Default;
-            this.result_box.Enabled = false;
             this.result_box.Font = new System.Drawing.Font("Segoe UI", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.result_box.ForeColor = System.Drawing.Color.White;
             this.result_box.Location = new System.Drawing.Point(3, 60);
@@ -384,7 +383,7 @@
             this.sign_button.Location = new System.Drawing.Point(3, 431);
             this.sign_button.Name = "sign_button";
             this.sign_button.Size = new System.Drawing.Size(70, 50);
-            this.sign_button.TabIndex = 22;
+            this.sign_button.TabIndex = 1;
             this.sign_button.TabStop = false;
             this.sign_button.Text = "±";
             this.sign_button.UseVisualStyleBackColor = false;
@@ -399,7 +398,7 @@
             this.sqrt_button.Location = new System.Drawing.Point(155, 207);
             this.sqrt_button.Name = "sqrt_button";
             this.sqrt_button.Size = new System.Drawing.Size(70, 50);
-            this.sqrt_button.TabIndex = 18;
+            this.sqrt_button.TabIndex = 19;
             this.sqrt_button.TabStop = false;
             this.sqrt_button.Text = "√";
             this.sqrt_button.UseVisualStyleBackColor = false;
@@ -429,7 +428,7 @@
             this.reciprocal_button.Location = new System.Drawing.Point(3, 207);
             this.reciprocal_button.Name = "reciprocal_button";
             this.reciprocal_button.Size = new System.Drawing.Size(70, 50);
-            this.reciprocal_button.TabIndex = 18;
+            this.reciprocal_button.TabIndex = 17;
             this.reciprocal_button.TabStop = false;
             this.reciprocal_button.Text = "1/x";
             this.reciprocal_button.UseVisualStyleBackColor = false;
@@ -444,7 +443,7 @@
             this.percent_button.Location = new System.Drawing.Point(3, 151);
             this.percent_button.Name = "percent_button";
             this.percent_button.Size = new System.Drawing.Size(70, 50);
-            this.percent_button.TabIndex = 19;
+            this.percent_button.TabIndex = 24;
             this.percent_button.TabStop = false;
             this.percent_button.Text = "%";
             this.percent_button.UseVisualStyleBackColor = false;
@@ -459,7 +458,7 @@
             this.backspace_button.Location = new System.Drawing.Point(231, 151);
             this.backspace_button.Name = "backspace_button";
             this.backspace_button.Size = new System.Drawing.Size(70, 50);
-            this.backspace_button.TabIndex = 19;
+            this.backspace_button.TabIndex = 21;
             this.backspace_button.TabStop = false;
             this.backspace_button.Text = "⌫";
             this.backspace_button.UseVisualStyleBackColor = false;
@@ -474,7 +473,7 @@
             this.memclear_button.Location = new System.Drawing.Point(3, 113);
             this.memclear_button.Name = "memclear_button";
             this.memclear_button.Size = new System.Drawing.Size(45, 35);
-            this.memclear_button.TabIndex = 19;
+            this.memclear_button.TabIndex = 25;
             this.memclear_button.TabStop = false;
             this.memclear_button.Text = "MC";
             this.memclear_button.UseVisualStyleBackColor = false;
@@ -489,7 +488,7 @@
             this.memrecall_button.Location = new System.Drawing.Point(54, 113);
             this.memrecall_button.Name = "memrecall_button";
             this.memrecall_button.Size = new System.Drawing.Size(45, 35);
-            this.memrecall_button.TabIndex = 19;
+            this.memrecall_button.TabIndex = 26;
             this.memrecall_button.TabStop = false;
             this.memrecall_button.Text = "MR";
             this.memrecall_button.UseVisualStyleBackColor = false;
@@ -504,7 +503,7 @@
             this.memadd_button.Location = new System.Drawing.Point(105, 113);
             this.memadd_button.Name = "memadd_button";
             this.memadd_button.Size = new System.Drawing.Size(45, 35);
-            this.memadd_button.TabIndex = 19;
+            this.memadd_button.TabIndex = 27;
             this.memadd_button.TabStop = false;
             this.memadd_button.Text = "M+";
             this.memadd_button.UseVisualStyleBackColor = false;
@@ -519,7 +518,7 @@
             this.memsubt_button.Location = new System.Drawing.Point(156, 113);
             this.memsubt_button.Name = "memsubt_button";
             this.memsubt_button.Size = new System.Drawing.Size(45, 35);
-            this.memsubt_button.TabIndex = 19;
+            this.memsubt_button.TabIndex = 28;
             this.memsubt_button.TabStop = false;
             this.memsubt_button.Text = "M-";
             this.memsubt_button.UseVisualStyleBackColor = false;
@@ -534,7 +533,7 @@
             this.memory_button.Location = new System.Drawing.Point(256, 113);
             this.memory_button.Name = "memory_button";
             this.memory_button.Size = new System.Drawing.Size(45, 35);
-            this.memory_button.TabIndex = 19;
+            this.memory_button.TabIndex = 30;
             this.memory_button.TabStop = false;
             this.memory_button.Text = "M";
             this.memory_button.UseVisualStyleBackColor = false;
@@ -549,7 +548,7 @@
             this.memsave_button.Location = new System.Drawing.Point(206, 113);
             this.memsave_button.Name = "memsave_button";
             this.memsave_button.Size = new System.Drawing.Size(45, 35);
-            this.memsave_button.TabIndex = 19;
+            this.memsave_button.TabIndex = 29;
             this.memsave_button.TabStop = false;
             this.memsave_button.Text = "MS";
             this.memsave_button.UseVisualStyleBackColor = false;
@@ -585,7 +584,7 @@
             this.more_button.Size = new System.Drawing.Size(31, 32);
             this.more_button.TabIndex = 24;
             this.more_button.Text = "≡";
-            this.more_button.Click += new System.EventHandler(this.more_button_Click);
+            this.more_button.Click += new System.EventHandler(this.function_Click);
             // 
             // label1
             // 
@@ -611,53 +610,17 @@
             this.more_panel.Size = new System.Drawing.Size(0, 461);
             this.more_panel.TabIndex = 25;
             // 
-            // calculator_label
+            // datecalc_label
             // 
-            this.calculator_label.AutoSize = true;
-            this.calculator_label.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculator_label.ForeColor = System.Drawing.Color.White;
-            this.calculator_label.Location = new System.Drawing.Point(2, 4);
-            this.calculator_label.Name = "calculator_label";
-            this.calculator_label.Size = new System.Drawing.Size(108, 28);
-            this.calculator_label.TabIndex = 0;
-            this.calculator_label.Text = "Calculator";
-            this.calculator_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // standard_label
-            // 
-            this.standard_label.AutoSize = true;
-            this.standard_label.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.standard_label.ForeColor = System.Drawing.Color.White;
-            this.standard_label.Location = new System.Drawing.Point(4, 32);
-            this.standard_label.Name = "standard_label";
-            this.standard_label.Size = new System.Drawing.Size(91, 28);
-            this.standard_label.TabIndex = 1;
-            this.standard_label.Text = "Standard";
-            this.standard_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // scientific_label
-            // 
-            this.scientific_label.AutoSize = true;
-            this.scientific_label.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.scientific_label.ForeColor = System.Drawing.Color.White;
-            this.scientific_label.Location = new System.Drawing.Point(4, 60);
-            this.scientific_label.Name = "scientific_label";
-            this.scientific_label.Size = new System.Drawing.Size(90, 28);
-            this.scientific_label.TabIndex = 1;
-            this.scientific_label.Text = "Scientific";
-            this.scientific_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // graphing_label
-            // 
-            this.graphing_label.AutoSize = true;
-            this.graphing_label.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.graphing_label.ForeColor = System.Drawing.Color.White;
-            this.graphing_label.Location = new System.Drawing.Point(4, 88);
-            this.graphing_label.Name = "graphing_label";
-            this.graphing_label.Size = new System.Drawing.Size(94, 28);
-            this.graphing_label.TabIndex = 1;
-            this.graphing_label.Text = "Graphing";
-            this.graphing_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.datecalc_label.AutoSize = true;
+            this.datecalc_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.datecalc_label.ForeColor = System.Drawing.Color.White;
+            this.datecalc_label.Location = new System.Drawing.Point(4, 144);
+            this.datecalc_label.Name = "datecalc_label";
+            this.datecalc_label.Size = new System.Drawing.Size(155, 28);
+            this.datecalc_label.TabIndex = 1;
+            this.datecalc_label.Text = "Date Calculation";
+            this.datecalc_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // prog_label
             // 
@@ -671,17 +634,53 @@
             this.prog_label.Text = "Programmer";
             this.prog_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // datecalc_label
+            // graphing_label
             // 
-            this.datecalc_label.AutoSize = true;
-            this.datecalc_label.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.datecalc_label.ForeColor = System.Drawing.Color.White;
-            this.datecalc_label.Location = new System.Drawing.Point(4, 144);
-            this.datecalc_label.Name = "datecalc_label";
-            this.datecalc_label.Size = new System.Drawing.Size(155, 28);
-            this.datecalc_label.TabIndex = 1;
-            this.datecalc_label.Text = "Date Calculation";
-            this.datecalc_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.graphing_label.AutoSize = true;
+            this.graphing_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.graphing_label.ForeColor = System.Drawing.Color.White;
+            this.graphing_label.Location = new System.Drawing.Point(4, 88);
+            this.graphing_label.Name = "graphing_label";
+            this.graphing_label.Size = new System.Drawing.Size(94, 28);
+            this.graphing_label.TabIndex = 1;
+            this.graphing_label.Text = "Graphing";
+            this.graphing_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // scientific_label
+            // 
+            this.scientific_label.AutoSize = true;
+            this.scientific_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.scientific_label.ForeColor = System.Drawing.Color.White;
+            this.scientific_label.Location = new System.Drawing.Point(4, 60);
+            this.scientific_label.Name = "scientific_label";
+            this.scientific_label.Size = new System.Drawing.Size(90, 28);
+            this.scientific_label.TabIndex = 1;
+            this.scientific_label.Text = "Scientific";
+            this.scientific_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // standard_label
+            // 
+            this.standard_label.AutoSize = true;
+            this.standard_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.standard_label.ForeColor = System.Drawing.Color.White;
+            this.standard_label.Location = new System.Drawing.Point(4, 32);
+            this.standard_label.Name = "standard_label";
+            this.standard_label.Size = new System.Drawing.Size(91, 28);
+            this.standard_label.TabIndex = 1;
+            this.standard_label.Text = "Standard";
+            this.standard_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // calculator_label
+            // 
+            this.calculator_label.AutoSize = true;
+            this.calculator_label.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculator_label.ForeColor = System.Drawing.Color.White;
+            this.calculator_label.Location = new System.Drawing.Point(2, 4);
+            this.calculator_label.Name = "calculator_label";
+            this.calculator_label.Size = new System.Drawing.Size(108, 28);
+            this.calculator_label.TabIndex = 0;
+            this.calculator_label.Text = "Calculator";
+            this.calculator_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Calculator
             // 

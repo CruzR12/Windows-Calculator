@@ -327,7 +327,7 @@
             this.clear_button.TabStop = false;
             this.clear_button.Text = "C";
             this.clear_button.UseVisualStyleBackColor = false;
-            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
+            this.clear_button.Click += new System.EventHandler(this.function_Click);
             // 
             // clear_entry_button
             // 
@@ -342,7 +342,7 @@
             this.clear_entry_button.TabStop = false;
             this.clear_entry_button.Text = "CE";
             this.clear_entry_button.UseVisualStyleBackColor = false;
-            this.clear_entry_button.Click += new System.EventHandler(this.clear_entry_button_Click);
+            this.clear_entry_button.Click += new System.EventHandler(this.function_Click);
             // 
             // result_label
             // 
@@ -463,7 +463,7 @@
             this.backspace_button.TabStop = false;
             this.backspace_button.Text = "⌫";
             this.backspace_button.UseVisualStyleBackColor = false;
-            this.backspace_button.Click += new System.EventHandler(this.backspace_button_Click);
+            this.backspace_button.Click += new System.EventHandler(this.function_Click);
             // 
             // memclear_button
             // 
@@ -478,7 +478,7 @@
             this.memclear_button.TabStop = false;
             this.memclear_button.Text = "MC";
             this.memclear_button.UseVisualStyleBackColor = false;
-            this.memclear_button.Click += new System.EventHandler(this.memclear_button_Click);
+            this.memclear_button.Click += new System.EventHandler(this.function_Click);
             // 
             // memrecall_button
             // 
@@ -493,7 +493,7 @@
             this.memrecall_button.TabStop = false;
             this.memrecall_button.Text = "MR";
             this.memrecall_button.UseVisualStyleBackColor = false;
-            this.memrecall_button.Click += new System.EventHandler(this.memrecall_button_Click);
+            this.memrecall_button.Click += new System.EventHandler(this.function_Click);
             // 
             // memadd_button
             // 
@@ -508,7 +508,7 @@
             this.memadd_button.TabStop = false;
             this.memadd_button.Text = "M+";
             this.memadd_button.UseVisualStyleBackColor = false;
-            this.memadd_button.Click += new System.EventHandler(this.memadd_button_Click);
+            this.memadd_button.Click += new System.EventHandler(this.function_Click);
             // 
             // memsubt_button
             // 
@@ -523,7 +523,7 @@
             this.memsubt_button.TabStop = false;
             this.memsubt_button.Text = "M-";
             this.memsubt_button.UseVisualStyleBackColor = false;
-            this.memsubt_button.Click += new System.EventHandler(this.memsubt_button_Click);
+            this.memsubt_button.Click += new System.EventHandler(this.function_Click);
             // 
             // memory_button
             // 
@@ -538,7 +538,7 @@
             this.memory_button.TabStop = false;
             this.memory_button.Text = "M";
             this.memory_button.UseVisualStyleBackColor = false;
-            this.memory_button.Click += new System.EventHandler(this.memory_button_Click);
+            this.memory_button.Click += new System.EventHandler(this.function_Click);
             // 
             // memsave_button
             // 
@@ -553,7 +553,7 @@
             this.memsave_button.TabStop = false;
             this.memsave_button.Text = "MS";
             this.memsave_button.UseVisualStyleBackColor = false;
-            this.memsave_button.Click += new System.EventHandler(this.memsave_button_Click);
+            this.memsave_button.Click += new System.EventHandler(this.function_Click);
             // 
             // mempanel
             // 

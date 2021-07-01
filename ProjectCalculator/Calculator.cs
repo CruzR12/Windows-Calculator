@@ -20,11 +20,11 @@ namespace ProjectCalculator
 
         private void numbutton_Click(object sender, EventArgs e)
         {
+            Button b = (Button)sender;
             if ((result_box.Text == "0")||(calcmethod.operation_clicked))
             {
                 result_box.Text = "";
             }
-            Button b = (Button)sender;
             if (b.Text == ".")
             {
                 if (!result_box.Text.Contains("."))
@@ -85,50 +85,6 @@ namespace ProjectCalculator
             result_box.Text = (Double.Parse(result_box.Text) / 100).ToString();
             calcmethod.operation_clicked = true;
         }
-
-        private void memclear_button_Click(object sender, EventArgs e)
-        {
-            calcmethod.memorynum = 0;
-            memnum_label.Text = "";
-        }
-
-        private void memrecall_button_Click(object sender, EventArgs e)
-        {
-            result_box.Text = calcmethod.memorynum.ToString();
-        }
-
-        private void memsave_button_Click(object sender, EventArgs e)
-        {
-            calcmethod.memorynum = Double.Parse(result_box.Text);
-            memnum_label.Text = (calcmethod.memorynum).ToString();
-        }
-
-        private void memadd_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text != "")
-            {
-                calcmethod.memorynum += Double.Parse(result_box.Text);
-            }
-            memnum_label.Text = (calcmethod.memorynum).ToString();
-        }
-
-        private void memsubt_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text != "")
-            {
-                calcmethod.memorynum -= Double.Parse(result_box.Text);
-            }
-            memnum_label.Text = (calcmethod.memorynum).ToString();
-        }
-
-        private void backspace_button_Click(object sender, EventArgs e)
-        {
-            if (result_box.Text.Length > 0)
-            {
-                result_box.Text = result_box.Text.Substring(0, result_box.Text.Length - 1);
-            }
-        }
-
         private void sqrt_button_Click(object sender, EventArgs e)
         {
             result_box.Text = (Math.Sqrt(Double.Parse(result_box.Text))).ToString();
@@ -154,17 +110,80 @@ namespace ProjectCalculator
             calcmethod.operation_clicked = true;
         }
 
-        private void clear_entry_button_Click(object sender, EventArgs e)
+        private void function_Click(object sender, EventArgs e)
         {
-            result_box.Text = "0";
+            Button function = (Button)sender;
+            if (function.Text == "C")
+            {
+                result_box.Clear();
+                calcmethod.value = 0;
+                result_box.Text = "0";
+                result_label.Text = "";
+            }
+            if (function.Text == "CE")
+            {
+                result_box.Text = "0";
+            }
+            if (function.Text == "MC")
+            {
+                calcmethod.memorynum = 0;
+                memnum_label.Text = "";
+            }
+            if (function.Text == "MR")
+            {
+                result_box.Text = calcmethod.memorynum.ToString();
+            }
+            if (function.Text == "MS")
+            {
+                calcmethod.memorynum = Double.Parse(result_box.Text);
+                memnum_label.Text = (calcmethod.memorynum).ToString();
+            }
+            if (function.Text == "M+")
+            {
+                if (result_box.Text != "")
+                {
+                    calcmethod.memorynum += Double.Parse(result_box.Text);
+                }
+                memnum_label.Text = (calcmethod.memorynum).ToString();
+            }
+            if (function.Text == "M-")
+            {
+                if (result_box.Text != "")
+                {
+                    calcmethod.memorynum -= Double.Parse(result_box.Text);
+                }
+                memnum_label.Text = (calcmethod.memorynum).ToString();
+            }
+            if (function.Text == "⌫")
+            {
+                if (result_box.Text.Length > 0)
+                {
+                    result_box.Text = result_box.Text.Substring(0, result_box.Text.Length - 1);
+                }
+            }
+            if (function.Text == "M")
+            {
+                if (mempanel.Height != 0)
+                {
+                    mempanel.Height = 0;
+                }
+                else
+                {
+                    mempanel.Height = 100;
+                }
+            }
         }
 
-        private void clear_button_Click(object sender, EventArgs e)
+        private void more_button_Click(object sender, EventArgs e)
         {
-            result_box.Clear();
-            calcmethod.value = 0;
-            result_box.Text = "0";
-            result_label.Text = "";
+            if (more_panel.Width != 0)
+            {
+                more_panel.Width = 0;
+            }
+            else
+            {
+                more_panel.Width = 225;
+            }
         }
 
         private void Calculator_KeyPress(object sender, KeyPressEventArgs e)
@@ -240,30 +259,6 @@ namespace ProjectCalculator
                     break;
                 default:
                     break;
-            }
-        }
-
-        private void memory_button_Click(object sender, EventArgs e)
-        {
-            if (mempanel.Height != 0)
-            {
-                mempanel.Height = 0;
-            }
-            else
-            {
-                mempanel.Height = 100;
-            }
-        }
-
-        private void more_button_Click(object sender, EventArgs e)
-        {
-            if (more_panel.Width != 0)
-            {
-                more_panel.Width = 0;
-            }
-            else
-            {
-                more_panel.Width = 225;
             }
         }
     }

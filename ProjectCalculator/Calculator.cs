@@ -20,11 +20,11 @@ namespace ProjectCalculator
 
         private void numbutton_Click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
             if ((result_box.Text == "0")||(calcmethod.operation_clicked))
             {
                 result_box.Text = "";
             }
+            Button b = (Button)sender;
             if (b.Text == ".")
             {
                 if (!result_box.Text.Contains("."))
@@ -65,6 +65,7 @@ namespace ProjectCalculator
             calcmethod.result();
             result_box.Text = calcmethod.value2;
             result_label.Text = "";
+            calcmethod.operation_clicked = true;
         }
 
         private void sign_button_Click(object sender, EventArgs e)
@@ -88,6 +89,7 @@ namespace ProjectCalculator
         private void memclear_button_Click(object sender, EventArgs e)
         {
             calcmethod.memorynum = 0;
+            memory_button.Text = "M";
         }
 
         private void memrecall_button_Click(object sender, EventArgs e)
@@ -98,6 +100,7 @@ namespace ProjectCalculator
         private void memsave_button_Click(object sender, EventArgs e)
         {
             calcmethod.memorynum = Double.Parse(result_box.Text);
+            memory_button.Text = (calcmethod.memorynum).ToString();
         }
 
         private void memadd_button_Click(object sender, EventArgs e)
@@ -106,6 +109,7 @@ namespace ProjectCalculator
             {
                 calcmethod.memorynum += Double.Parse(result_box.Text);
             }
+            memory_button.Text = (calcmethod.memorynum).ToString();
         }
 
         private void memsubt_button_Click(object sender, EventArgs e)
@@ -114,6 +118,7 @@ namespace ProjectCalculator
             {
                 calcmethod.memorynum -= Double.Parse(result_box.Text);
             }
+            memory_button.Text = (calcmethod.memorynum).ToString();
         }
 
         private void backspace_button_Click(object sender, EventArgs e)
@@ -140,33 +145,7 @@ namespace ProjectCalculator
         {
             if (result_box.Text == "0")
             {
-                result_box.Text = "Cannot divide by zero";
-                reciprocal_button.Enabled = false;
-                percent_button.Enabled = false;
-                sqrt_button.Enabled = false;
-                square_button.Enabled = false;
-                division_button.Enabled = false;
-                multiplication_button.Enabled = false;
-                addition_button.Enabled = false;
-                subtraction_button.Enabled = false;
-                number_0.Enabled = false;
-                number_1.Enabled = false;
-                number_2.Enabled = false;
-                number_3.Enabled = false;
-                number_4.Enabled = false;
-                number_5.Enabled = false;
-                number_6.Enabled = false;
-                number_7.Enabled = false;
-                number_8.Enabled = false;
-                number_9.Enabled = false;
-                sign_button.Enabled = false;
-                decimal_button.Enabled = false;
-                equals_button.Enabled = false;
-                memadd_button.Enabled = false;
-                memsubt_button.Enabled = false;
-                memory_button.Enabled = false;
-                memrecall_button.Enabled = false;
-                memclear_button.Enabled = false;
+                result_box.Text = "0";
             }
             else
             {
@@ -178,32 +157,6 @@ namespace ProjectCalculator
         private void clear_entry_button_Click(object sender, EventArgs e)
         {
             result_box.Text = "0";
-            reciprocal_button.Enabled = true;
-            percent_button.Enabled = true;
-            sqrt_button.Enabled = true;
-            square_button.Enabled = true;
-            division_button.Enabled = true;
-            multiplication_button.Enabled = true;
-            addition_button.Enabled = true;
-            subtraction_button.Enabled = true;
-            number_0.Enabled = true;
-            number_1.Enabled = true;
-            number_2.Enabled = true;
-            number_3.Enabled = true;
-            number_4.Enabled = true;
-            number_5.Enabled = true;
-            number_6.Enabled = true;
-            number_7.Enabled = true;
-            number_8.Enabled = true;
-            number_9.Enabled = true;
-            sign_button.Enabled = true;
-            decimal_button.Enabled = true;
-            equals_button.Enabled = true;
-            memadd_button.Enabled = true;
-            memsubt_button.Enabled = true;
-            memory_button.Enabled = true;
-            memrecall_button.Enabled = true;
-            memclear_button.Enabled = true;
         }
 
         private void clear_button_Click(object sender, EventArgs e)
@@ -212,32 +165,6 @@ namespace ProjectCalculator
             calcmethod.value = 0;
             result_box.Text = "0";
             result_label.Text = "";
-            reciprocal_button.Enabled = true;
-            percent_button.Enabled = true;
-            sqrt_button.Enabled = true;
-            square_button.Enabled = true;
-            division_button.Enabled = true;
-            multiplication_button.Enabled = true;
-            addition_button.Enabled = true;
-            subtraction_button.Enabled = true;
-            number_0.Enabled = true;
-            number_1.Enabled = true;
-            number_2.Enabled = true;
-            number_3.Enabled = true;
-            number_4.Enabled = true;
-            number_5.Enabled = true;
-            number_6.Enabled = true;
-            number_7.Enabled = true;
-            number_8.Enabled = true;
-            number_9.Enabled = true;
-            sign_button.Enabled = true;
-            decimal_button.Enabled = true;
-            equals_button.Enabled = true;
-            memadd_button.Enabled = true;
-            memsubt_button.Enabled = true;
-            memory_button.Enabled = true;
-            memrecall_button.Enabled = true;
-            memclear_button.Enabled = true;
         }
 
         private void Calculator_KeyPress(object sender, KeyPressEventArgs e)

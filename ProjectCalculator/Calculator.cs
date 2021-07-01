@@ -89,7 +89,7 @@ namespace ProjectCalculator
         private void memclear_button_Click(object sender, EventArgs e)
         {
             calcmethod.memorynum = 0;
-            memory_button.Text = "M";
+            memnum_label.Text = "";
         }
 
         private void memrecall_button_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace ProjectCalculator
         private void memsave_button_Click(object sender, EventArgs e)
         {
             calcmethod.memorynum = Double.Parse(result_box.Text);
-            memory_button.Text = (calcmethod.memorynum).ToString();
+            memnum_label.Text = (calcmethod.memorynum).ToString();
         }
 
         private void memadd_button_Click(object sender, EventArgs e)
@@ -109,7 +109,7 @@ namespace ProjectCalculator
             {
                 calcmethod.memorynum += Double.Parse(result_box.Text);
             }
-            memory_button.Text = (calcmethod.memorynum).ToString();
+            memnum_label.Text = (calcmethod.memorynum).ToString();
         }
 
         private void memsubt_button_Click(object sender, EventArgs e)
@@ -118,7 +118,7 @@ namespace ProjectCalculator
             {
                 calcmethod.memorynum -= Double.Parse(result_box.Text);
             }
-            memory_button.Text = (calcmethod.memorynum).ToString();
+            memnum_label.Text = (calcmethod.memorynum).ToString();
         }
 
         private void backspace_button_Click(object sender, EventArgs e)
@@ -240,6 +240,18 @@ namespace ProjectCalculator
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void memory_button_Click(object sender, EventArgs e)
+        {
+            if (mempanel.Height != 0)
+            {
+                mempanel.Height = 0;
+            }
+            else
+            {
+                mempanel.Height = 100;
             }
         }
     }

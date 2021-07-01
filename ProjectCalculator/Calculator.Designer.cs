@@ -60,6 +60,9 @@
             this.memsubt_button = new System.Windows.Forms.Button();
             this.memory_button = new System.Windows.Forms.Button();
             this.memsave_button = new System.Windows.Forms.Button();
+            this.mempanel = new System.Windows.Forms.Panel();
+            this.memnum_label = new System.Windows.Forms.Label();
+            this.mempanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // number_0
@@ -524,6 +527,7 @@
             this.memory_button.TabStop = false;
             this.memory_button.Text = "M";
             this.memory_button.UseVisualStyleBackColor = false;
+            this.memory_button.Click += new System.EventHandler(this.memory_button_Click);
             // 
             // memsave_button
             // 
@@ -540,12 +544,33 @@
             this.memsave_button.UseVisualStyleBackColor = false;
             this.memsave_button.Click += new System.EventHandler(this.memsave_button_Click);
             // 
+            // mempanel
+            // 
+            this.mempanel.Controls.Add(this.memnum_label);
+            this.mempanel.Location = new System.Drawing.Point(101, 147);
+            this.mempanel.Name = "mempanel";
+            this.mempanel.Size = new System.Drawing.Size(200, 0);
+            this.mempanel.TabIndex = 23;
+            // 
+            // memnum_label
+            // 
+            this.memnum_label.AutoSize = true;
+            this.memnum_label.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.memnum_label.ForeColor = System.Drawing.Color.White;
+            this.memnum_label.Location = new System.Drawing.Point(3, 3);
+            this.memnum_label.Name = "memnum_label";
+            this.memnum_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.memnum_label.Size = new System.Drawing.Size(0, 19);
+            this.memnum_label.TabIndex = 0;
+            this.memnum_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(305, 485);
+            this.Controls.Add(this.mempanel);
             this.Controls.Add(this.sign_button);
             this.Controls.Add(this.result_label);
             this.Controls.Add(this.result_box);
@@ -586,6 +611,8 @@
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Calculator_KeyPress);
+            this.mempanel.ResumeLayout(false);
+            this.mempanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -625,6 +652,8 @@
         private System.Windows.Forms.Button memsubt_button;
         private System.Windows.Forms.Button memory_button;
         private System.Windows.Forms.Button memsave_button;
+        private System.Windows.Forms.Panel mempanel;
+        private System.Windows.Forms.Label memnum_label;
     }
 }
 

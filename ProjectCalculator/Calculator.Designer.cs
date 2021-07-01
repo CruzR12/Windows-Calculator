@@ -62,7 +62,17 @@
             this.memsave_button = new System.Windows.Forms.Button();
             this.mempanel = new System.Windows.Forms.Panel();
             this.memnum_label = new System.Windows.Forms.Label();
+            this.more_button = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.more_panel = new System.Windows.Forms.Panel();
+            this.calculator_label = new System.Windows.Forms.Label();
+            this.standard_label = new System.Windows.Forms.Label();
+            this.scientific_label = new System.Windows.Forms.Label();
+            this.graphing_label = new System.Windows.Forms.Label();
+            this.prog_label = new System.Windows.Forms.Label();
+            this.datecalc_label = new System.Windows.Forms.Label();
             this.mempanel.SuspendLayout();
+            this.more_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // number_0
@@ -351,9 +361,10 @@
             // 
             this.result_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.result_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.result_box.Cursor = System.Windows.Forms.Cursors.Default;
             this.result_box.Enabled = false;
             this.result_box.Font = new System.Drawing.Font("Segoe UI", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result_box.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.result_box.ForeColor = System.Drawing.Color.White;
             this.result_box.Location = new System.Drawing.Point(3, 60);
             this.result_box.Multiline = true;
             this.result_box.Name = "result_box";
@@ -564,12 +575,123 @@
             this.memnum_label.TabIndex = 0;
             this.memnum_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // more_button
+            // 
+            this.more_button.AutoSize = true;
+            this.more_button.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.more_button.ForeColor = System.Drawing.Color.White;
+            this.more_button.Location = new System.Drawing.Point(1, -4);
+            this.more_button.Name = "more_button";
+            this.more_button.Size = new System.Drawing.Size(31, 32);
+            this.more_button.TabIndex = 24;
+            this.more_button.Text = "≡";
+            this.more_button.Click += new System.EventHandler(this.more_button_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(28, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 28);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Standard";
+            // 
+            // more_panel
+            // 
+            this.more_panel.Controls.Add(this.datecalc_label);
+            this.more_panel.Controls.Add(this.prog_label);
+            this.more_panel.Controls.Add(this.graphing_label);
+            this.more_panel.Controls.Add(this.scientific_label);
+            this.more_panel.Controls.Add(this.standard_label);
+            this.more_panel.Controls.Add(this.calculator_label);
+            this.more_panel.Location = new System.Drawing.Point(0, 31);
+            this.more_panel.Name = "more_panel";
+            this.more_panel.Size = new System.Drawing.Size(0, 461);
+            this.more_panel.TabIndex = 25;
+            // 
+            // calculator_label
+            // 
+            this.calculator_label.AutoSize = true;
+            this.calculator_label.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculator_label.ForeColor = System.Drawing.Color.White;
+            this.calculator_label.Location = new System.Drawing.Point(2, 4);
+            this.calculator_label.Name = "calculator_label";
+            this.calculator_label.Size = new System.Drawing.Size(108, 28);
+            this.calculator_label.TabIndex = 0;
+            this.calculator_label.Text = "Calculator";
+            this.calculator_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // standard_label
+            // 
+            this.standard_label.AutoSize = true;
+            this.standard_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.standard_label.ForeColor = System.Drawing.Color.White;
+            this.standard_label.Location = new System.Drawing.Point(4, 32);
+            this.standard_label.Name = "standard_label";
+            this.standard_label.Size = new System.Drawing.Size(91, 28);
+            this.standard_label.TabIndex = 1;
+            this.standard_label.Text = "Standard";
+            this.standard_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // scientific_label
+            // 
+            this.scientific_label.AutoSize = true;
+            this.scientific_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.scientific_label.ForeColor = System.Drawing.Color.White;
+            this.scientific_label.Location = new System.Drawing.Point(4, 60);
+            this.scientific_label.Name = "scientific_label";
+            this.scientific_label.Size = new System.Drawing.Size(90, 28);
+            this.scientific_label.TabIndex = 1;
+            this.scientific_label.Text = "Scientific";
+            this.scientific_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // graphing_label
+            // 
+            this.graphing_label.AutoSize = true;
+            this.graphing_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.graphing_label.ForeColor = System.Drawing.Color.White;
+            this.graphing_label.Location = new System.Drawing.Point(4, 88);
+            this.graphing_label.Name = "graphing_label";
+            this.graphing_label.Size = new System.Drawing.Size(94, 28);
+            this.graphing_label.TabIndex = 1;
+            this.graphing_label.Text = "Graphing";
+            this.graphing_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // prog_label
+            // 
+            this.prog_label.AutoSize = true;
+            this.prog_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.prog_label.ForeColor = System.Drawing.Color.White;
+            this.prog_label.Location = new System.Drawing.Point(4, 116);
+            this.prog_label.Name = "prog_label";
+            this.prog_label.Size = new System.Drawing.Size(122, 28);
+            this.prog_label.TabIndex = 1;
+            this.prog_label.Text = "Programmer";
+            this.prog_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // datecalc_label
+            // 
+            this.datecalc_label.AutoSize = true;
+            this.datecalc_label.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.datecalc_label.ForeColor = System.Drawing.Color.White;
+            this.datecalc_label.Location = new System.Drawing.Point(4, 144);
+            this.datecalc_label.Name = "datecalc_label";
+            this.datecalc_label.Size = new System.Drawing.Size(155, 28);
+            this.datecalc_label.TabIndex = 1;
+            this.datecalc_label.Text = "Date Calculation";
+            this.datecalc_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(305, 485);
+            this.Controls.Add(this.more_panel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.more_button);
             this.Controls.Add(this.mempanel);
             this.Controls.Add(this.sign_button);
             this.Controls.Add(this.result_label);
@@ -613,6 +735,8 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Calculator_KeyPress);
             this.mempanel.ResumeLayout(false);
             this.mempanel.PerformLayout();
+            this.more_panel.ResumeLayout(false);
+            this.more_panel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -654,6 +778,15 @@
         private System.Windows.Forms.Button memsave_button;
         private System.Windows.Forms.Panel mempanel;
         private System.Windows.Forms.Label memnum_label;
+        private System.Windows.Forms.Label more_button;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel more_panel;
+        private System.Windows.Forms.Label datecalc_label;
+        private System.Windows.Forms.Label prog_label;
+        private System.Windows.Forms.Label graphing_label;
+        private System.Windows.Forms.Label scientific_label;
+        private System.Windows.Forms.Label standard_label;
+        private System.Windows.Forms.Label calculator_label;
     }
 }
 

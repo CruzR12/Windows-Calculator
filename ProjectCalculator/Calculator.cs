@@ -254,5 +254,17 @@ namespace ProjectCalculator
                 mempanel.Height = 100;
             }
         }
+
+        private void more_button_Click(object sender, EventArgs e)
+        {
+            if (more_panel.Width != 0)
+            {
+                more_panel.Width = 0;
+            }
+            else
+            {
+                more_panel.Width = 225;
+            }
+        }
     }
 }

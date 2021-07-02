@@ -172,19 +172,19 @@ namespace ProjectCalculator
                     mempanel.Height = 100;
                 }
             }
-            if (function.Text == "≡")
-            {
-                if (more_panel.Width != 0)
-                {
-                    more_panel.Width = 0;
-                }
-                else
-                {
-                    more_panel.Width = 225;
-                }
-            }
         }
 
+        private void more_button_Click(object sender, EventArgs e)
+        {
+            if (more_panel.Width != 0)
+            {
+                more_panel.Width = 0;
+            }
+            else
+            {
+                more_panel.Width = 225;
+            }
+        }
 
         private void Calculator_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -260,6 +260,6 @@ namespace ProjectCalculator
                 default:
                     break;
             }
-        }
+        } 
     }
 }

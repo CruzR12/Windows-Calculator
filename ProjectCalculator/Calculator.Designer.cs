@@ -585,7 +585,7 @@
             this.more_button.Size = new System.Drawing.Size(31, 32);
             this.more_button.TabIndex = 24;
             this.more_button.Text = "≡";
-            this.more_button.Click += new System.EventHandler(this.function_Click);
+            this.more_button.Click += new System.EventHandler(this.more_button_Click);
             // 
             // label1
             // 

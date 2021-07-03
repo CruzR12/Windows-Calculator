@@ -570,7 +570,7 @@
             this.memnum_label.ForeColor = System.Drawing.Color.White;
             this.memnum_label.Location = new System.Drawing.Point(3, 3);
             this.memnum_label.Name = "memnum_label";
-            this.memnum_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.memnum_label.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.memnum_label.Size = new System.Drawing.Size(0, 19);
             this.memnum_label.TabIndex = 0;
             this.memnum_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

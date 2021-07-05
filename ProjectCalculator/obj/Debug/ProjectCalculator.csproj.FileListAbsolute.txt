@@ -16,3 +16,4 @@ C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\Proje
 C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.Calculator.resources
 C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.Properties.Resources.resources
 C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.csproj.GenerateResource.Cache
+C:\Users\cruzr\Source\Repos\Windows-Calculator\ProjectCalculator\obj\Debug\ProjectCalculator.Scientific.resources

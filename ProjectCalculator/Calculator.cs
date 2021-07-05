@@ -260,6 +260,14 @@ namespace ProjectCalculator
                 default:
                     break;
             }
-        } 
+        }
+
+        private void scientific_label_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Scientific ScientificCalc = new Scientific();
+            ScientificCalc.ShowDialog();
+            this.Close();
+        }
     }
 }

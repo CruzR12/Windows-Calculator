@@ -658,6 +658,7 @@
             this.scientific_label.TabIndex = 1;
             this.scientific_label.Text = "Scientific";
             this.scientific_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.scientific_label.Click += new System.EventHandler(this.scientific_label_Click);
             // 
             // standard_label
             // 
